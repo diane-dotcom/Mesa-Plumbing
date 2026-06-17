@@ -22,7 +22,9 @@
         <span class="brand-main">MESA</span>
         <span class="brand-service">PLUMBING &middot; HEATING &middot; COOLING</span>
         <span class="brand-icons" aria-hidden="true">
-          <span>D</span><span>H</span><span>C</span>
+          <span><i data-lucide="droplets"></i></span>
+          <span><i data-lucide="flame"></i></span>
+          <span><i data-lucide="snowflake"></i></span>
         </span>
       </a>
 
@@ -40,7 +42,7 @@
 
       <div class="header-actions">
         <a class="phone-link" href="tel:+17206802303" aria-label="Call Mesa at 720 680 2303">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 4.75c.35-.36.94-.33 1.25.07l2 2.58c.22.28.25.67.08.98l-1.02 1.83a10.1 10.1 0 0 0 3.98 3.98l1.83-1.02c.31-.17.7-.14.98.08l2.58 2c.4.31.43.9.07 1.25l-1.2 1.18c-.78.77-1.92 1.04-2.96.7C10.45 16.85 7.15 13.55 5.62 8.9c-.34-1.04-.07-2.18.7-2.96l1.18-1.2Z"/></svg>
+          <i data-lucide="phone-call"></i>
           <span>Call 24/7<br /><strong>(720) 680-2303</strong></span>
         </a>
         <a class="button button-red" href="#request">Schedule Now</a>
@@ -58,11 +60,6 @@
 
       <section class="hero">
         <div class="hero-art" aria-hidden="true">
-          <img
-            class="hero-photo-bg"
-            src="assets/mesa-hero-background.jpeg"
-            alt=""
-          />
           <div class="hero-photo-scrim"></div>
           <div class="mountain mountain-one"></div>
           <div class="mountain mountain-two"></div>
@@ -81,13 +78,13 @@
             From burst pipes to boiler tune-ups, Mesa keeps Boulder County homes comfortable year-round with honest, flat-rate pricing and same-day service.
           </p>
           <div class="hero-buttons">
-            <a class="button button-red" href="tel:+17206802303">Call (720) 680-2303</a>
-            <a class="button button-dark" href="#request">Schedule Online</a>
+            <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
+            <a class="button button-dark" href="#request">Schedule Online <i data-lucide="arrow-right"></i></a>
           </div>
           <div class="trust-pills" aria-label="Trust highlights">
-            <span><ShieldIcon></ShieldIcon> Licensed &amp; Insured</span>
-            <span><FamilyIcon></FamilyIcon> Family-Owned &amp; Local</span>
-            <span><ClockIcon></ClockIcon> 24/7 Emergency</span>
+            <span><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
+            <span><i data-lucide="house"></i> Family-Owned &amp; Local</span>
+            <span><i data-lucide="clock-3"></i> 24/7 Emergency</span>
           </div>
         </div>
 
@@ -100,10 +97,10 @@
 
           <fieldset>
             <legend>What do you need?</legend>
-            <label class="service-choice"><input type="radio" name="service" value="Plumbing" checked /> <DropIcon></DropIcon> Plumbing</label>
-            <label class="service-choice"><input type="radio" name="service" value="Heating" /> <FlameIcon></FlameIcon> Heating</label>
-            <label class="service-choice"><input type="radio" name="service" value="Cooling" /> <SnowIcon></SnowIcon> Cooling</label>
-            <label class="service-choice"><input type="radio" name="service" value="Emergency" /> <ClockIcon></ClockIcon> Emergency</label>
+            <label class="service-choice"><input type="radio" name="service" value="Plumbing" checked /> <i data-lucide="droplet"></i> Plumbing</label>
+            <label class="service-choice"><input type="radio" name="service" value="Heating" /> <i data-lucide="flame"></i> Heating</label>
+            <label class="service-choice"><input type="radio" name="service" value="Cooling" /> <i data-lucide="snowflake"></i> Cooling</label>
+            <label class="service-choice"><input type="radio" name="service" value="Emergency" /> <i data-lucide="clock-3"></i> Emergency</label>
           </fieldset>
 
           <div class="form-grid">
@@ -112,7 +109,7 @@
           </div>
           <label>Service Address <input name="address" placeholder="Street, Boulder, CO" required /></label>
           <label>Project Details <textarea name="message" placeholder="Tell us what is going on..."></textarea></label>
-          <button class="button button-red full" type="submit">Get My Free Estimate</button>
+          <button class="button button-red full" type="submit">Get My Free Estimate <i data-lucide="arrow-right"></i></button>
           <small>Licensed &amp; insured &middot; No-obligation quote</small>
           <p class="form-message" role="status" aria-live="polite"></p>
         </form>
@@ -125,31 +122,31 @@
         </div>
         <div class="service-grid">
           <article class="service-card" id="plumbing">
-            <DropIcon></DropIcon>
+            <i data-lucide="droplet"></i>
             <h3>Plumbing</h3>
             <p>Repairs, leaks, drains, water heaters, and whole-home solutions.</p>
             <a href="#request" data-service="Plumbing">Learn More</a>
           </article>
           <article class="service-card" id="heating">
-            <FlameIcon></FlameIcon>
+            <i data-lucide="flame"></i>
             <h3>Heating</h3>
             <p>Furnaces, boilers, repairs, and efficient system installs.</p>
             <a href="#request" data-service="Heating">Learn More</a>
           </article>
           <article class="service-card" id="cooling">
-            <SnowIcon></SnowIcon>
+            <i data-lucide="snowflake"></i>
             <h3>Cooling</h3>
             <p>AC repair, replacements, and maintenance for total comfort.</p>
             <a href="#request" data-service="Cooling">Learn More</a>
           </article>
           <article class="service-card">
-            <ClockIcon></ClockIcon>
+            <i data-lucide="calendar-clock"></i>
             <h3>Maintenance</h3>
             <p>Preventive tune-ups to keep your systems running strong.</p>
             <a href="#request" data-service="Maintenance">Learn More</a>
           </article>
           <article class="service-card">
-            <ShieldIcon></ShieldIcon>
+            <i data-lucide="shield-alert"></i>
             <h3>Emergency Service</h3>
             <p>24/7 response for plumbing, heating, and cooling emergencies.</p>
             <a href="#request" data-service="Emergency">Learn More</a>
@@ -164,9 +161,9 @@
             For over 40 years, Mesa has been the go-to choice for homeowners across Boulder County. We believe in doing the job right, treating you with respect, and standing behind our work.
           </p>
           <div class="value-grid">
-            <div><ShieldIcon></ShieldIcon><h3>Honest, Upfront Pricing</h3><p>No surprises. No pressure. Just clear answers and fair prices.</p></div>
-            <div><FamilyIcon></FamilyIcon><h3>Local &amp; Family-Owned</h3><p>Proudly serving Boulder County since 1982. We're your neighbors.</p></div>
-            <div><ClockIcon></ClockIcon><h3>On-Time, Every Time</h3><p>We value your time with reliable service and on-time arrivals.</p></div>
+            <div><i data-lucide="badge-check"></i><h3>Honest, Upfront Pricing</h3><p>No surprises. No pressure. Just clear answers and fair prices.</p></div>
+            <div><i data-lucide="users-round"></i><h3>Local &amp; Family-Owned</h3><p>Proudly serving Boulder County since 1982. We're your neighbors.</p></div>
+            <div><i data-lucide="clock-3"></i><h3>On-Time, Every Time</h3><p>We value your time with reliable service and on-time arrivals.</p></div>
           </div>
         </div>
         <div class="photo-card" aria-label="Mesa service van illustration">
@@ -239,10 +236,7 @@
       <small>&copy; 2026 Mesa Plumbing, Heating and Cooling. Local homepage demo.</small>
     </footer>
 
-    <template id="icons">
-      <svg><symbol id="unused"></symbol></svg>
-    </template>
-
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
