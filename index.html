@@ -33,7 +33,7 @@
       </button>
 
       <nav class="main-nav" aria-label="Primary navigation">
-        <a href="#top">Home</a>
+        <a href="#home">Home</a>
         <a href="#plumbing">Plumbing</a>
         <a href="#heating">Heating</a>
         <a href="#cooling">Cooling</a>
@@ -59,8 +59,9 @@
         <span>Based on 900+ reviews</span>
       </section>
 
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero-art" aria-hidden="true">
+          <img class="hero-reference-bg" src="assets/mesa-hero-reference.jpeg" alt="" />
           <div class="hero-photo-scrim"></div>
           <div class="mountain mountain-one"></div>
           <div class="mountain mountain-two"></div>
@@ -84,14 +85,14 @@
           <p class="hero-copy">
             From burst pipes to boiler tune-ups, Mesa keeps Boulder County homes comfortable year-round with honest, flat-rate pricing and same-day service.
           </p>
-          <div class="hero-buttons">
-            <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
-            <a class="button button-dark" href="#request">Schedule Online <i data-lucide="arrow-right"></i></a>
-          </div>
           <div class="trust-pills" aria-label="Trust highlights">
             <span><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
             <span><i data-lucide="house"></i> Family-Owned &amp; Local</span>
             <span><i data-lucide="clock-3"></i> 24/7 Emergency</span>
+          </div>
+          <div class="hero-buttons">
+            <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
+            <a class="button button-dark" href="#request">Schedule Online <i data-lucide="arrow-right"></i></a>
           </div>
         </div>
 
@@ -115,7 +116,6 @@
             <label>Phone <input name="phone" placeholder="(720) 555-0123" required /></label>
           </div>
           <label>Service Address <input name="address" placeholder="Street, Boulder, CO" required /></label>
-          <label>Project Details <textarea name="message" placeholder="Tell us what is going on..."></textarea></label>
           <button class="button button-red full" type="submit">Get My Free Estimate <i data-lucide="arrow-right"></i></button>
           <small>Licensed &amp; insured &middot; No-obligation quote</small>
           <p class="form-message" role="status" aria-live="polite"></p>
