@@ -259,7 +259,7 @@ input:focus, textarea:focus { border-color: var(--red); box-shadow: 0 0 0 4px rg
 .services {
   background:
     linear-gradient(180deg, #f5f6f7 0%, #f8f8f8 68%, #fff 100%);
-  padding-bottom: calc(clamp(56px, 7vw, 90px) + 10px);
+  padding-bottom: clamp(42px, 5vw, 70px);
   overflow: hidden;
   position: relative;
 }
@@ -276,7 +276,50 @@ input:focus, textarea:focus { border-color: var(--red); box-shadow: 0 0 0 4px rg
 .service-card a { align-items: center; color: var(--red); display: inline-flex; font-size: 13px; font-weight: 900; gap: 8px; margin-top: 10px; text-transform: uppercase; }
 .service-card a svg { height: 15px; width: 15px; }
 .services-cta { display: flex; justify-content: center; margin-top: 30px; }
-.services-cta .button { min-width: 230px; }
+.services-cta .button { min-width: 0; width: auto; }
+
+.section-divider {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 32px 46px 32px 1fr;
+  gap: 14px;
+  margin-top: -16px;
+  padding: 0 0 22px;
+  position: relative;
+}
+.divider-line {
+  background: #05090d;
+  height: 20px;
+  position: relative;
+}
+.divider-line-left {
+  border-radius: 0 999px 0 0;
+  clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
+}
+.divider-line-right {
+  border-radius: 999px 0 0 0;
+  clip-path: polygon(0 100%, 0 0, 100% 70%, 100% 100%);
+}
+.divider-accent {
+  background: var(--red);
+  border-radius: 999px;
+  height: 3px;
+  width: 32px;
+}
+.divider-badge {
+  align-items: center;
+  background: var(--red);
+  border: 5px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  height: 46px;
+  justify-content: center;
+  width: 46px;
+  z-index: 1;
+}
+.divider-badge svg { height: 20px; width: 20px; }
 
 .split { align-items: center; border-top: 1px solid var(--line); display: grid; gap: clamp(32px, 5vw, 86px); grid-template-columns: minmax(0, .95fr) minmax(320px, 1fr); }
 .value-grid { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 34px; }
