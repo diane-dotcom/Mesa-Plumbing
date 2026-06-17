@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mesa Plumbing, Heating and Cooling | Boulder County Home Comfort</title>
+    <meta
+      name="description"
+      content="Mesa Plumbing, Heating and Cooling provides plumbing, heating, cooling, maintenance, and 24/7 emergency service across Boulder County."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Mesa home">
+        <span class="brand-main">MESA</span>
+        <span class="brand-service">PLUMBING &middot; HEATING &middot; COOLING</span>
+        <span class="brand-icons" aria-hidden="true">
+          <span>D</span><span>H</span><span>C</span>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#plumbing">Plumbing</a>
+        <a href="#heating">Heating</a>
+        <a href="#cooling">Cooling</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+17206802303" aria-label="Call Mesa at 720 680 2303">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 4.75c.35-.36.94-.33 1.25.07l2 2.58c.22.28.25.67.08.98l-1.02 1.83a10.1 10.1 0 0 0 3.98 3.98l1.83-1.02c.31-.17.7-.14.98.08l2.58 2c.4.31.43.9.07 1.25l-1.2 1.18c-.78.77-1.92 1.04-2.96.7C10.45 16.85 7.15 13.55 5.62 8.9c-.34-1.04-.07-2.18.7-2.96l1.18-1.2Z"/></svg>
+          <span>Call 24/7<br /><strong>(720) 680-2303</strong></span>
+        </a>
+        <a class="button button-red" href="#request">Schedule Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="review-strip" aria-label="Review summary">
+        <span class="google-dot">G</span>
+        <strong>Google Reviews</strong>
+        <span>Boulder County rates us 4.8</span>
+        <span class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span>Based on 900+ reviews</span>
+      </section>
+
+      <section class="hero">
+        <div class="hero-art" aria-hidden="true">
+          <div class="mountain mountain-one"></div>
+          <div class="mountain mountain-two"></div>
+          <div class="service-van">
+            <span class="van-logo">MESA</span>
+            <span class="van-line"></span>
+            <span class="van-wheel wheel-left"></span>
+            <span class="van-wheel wheel-right"></span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Your local neighborhood experts &middot; Since 1982</p>
+          <h1>Boulder County's Trusted Plumbing, <span>Heating</span> &amp; <span>Cooling</span></h1>
+          <p class="hero-copy">
+            From burst pipes to boiler tune-ups, Mesa keeps Boulder County homes comfortable year-round with honest, flat-rate pricing and same-day service.
+          </p>
+          <div class="hero-buttons">
+            <a class="button button-red" href="tel:+17206802303">Call (720) 680-2303</a>
+            <a class="button button-dark" href="#request">Schedule Online</a>
+          </div>
+          <div class="trust-pills" aria-label="Trust highlights">
+            <span><ShieldIcon></ShieldIcon> Licensed &amp; Insured</span>
+            <span><FamilyIcon></FamilyIcon> Family-Owned &amp; Local</span>
+            <span><ClockIcon></ClockIcon> 24/7 Emergency</span>
+          </div>
+        </div>
+
+        <form class="request-card" id="request" data-lead-form>
+          <h2>Request Your Service</h2>
+          <p>Fast scheduling, most calls handled same day. No after-hours upcharge.</p>
+          <div class="rating-line"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><strong>4.8</strong><span>/ 5 &middot; 900+ Google reviews</span></div>
+
+          <fieldset>
+            <legend>What do you need?</legend>
+            <label class="service-choice"><input type="radio" name="service" value="Plumbing" checked /> <DropIcon></DropIcon> Plumbing</label>
+            <label class="service-choice"><input type="radio" name="service" value="Heating" /> <FlameIcon></FlameIcon> Heating</label>
+            <label class="service-choice"><input type="radio" name="service" value="Cooling" /> <SnowIcon></SnowIcon> Cooling</label>
+            <label class="service-choice"><input type="radio" name="service" value="Emergency" /> <ClockIcon></ClockIcon> Emergency</label>
+          </fieldset>
+
+          <div class="form-grid">
+            <label>Full Name <input name="name" placeholder="Jane Doe" required /></label>
+            <label>Phone <input name="phone" placeholder="(720) 555-0123" required /></label>
+          </div>
+          <label>Service Address <input name="address" placeholder="Street, Boulder, CO" required /></label>
+          <label>Project Details <textarea name="message" placeholder="Tell us what is going on..."></textarea></label>
+          <button class="button button-red full" type="submit">Get My Free Estimate</button>
+          <small>Licensed &amp; insured &middot; No-obligation quote</small>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <h2>Our Core Services</h2>
+          <p>Complete home comfort solutions handled by experts you trust.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card" id="plumbing">
+            <DropIcon></DropIcon>
+            <h3>Plumbing</h3>
+            <p>Repairs, leaks, drains, water heaters, and whole-home solutions.</p>
+            <a href="#request" data-service="Plumbing">Learn More</a>
+          </article>
+          <article class="service-card" id="heating">
+            <FlameIcon></FlameIcon>
+            <h3>Heating</h3>
+            <p>Furnaces, boilers, repairs, and efficient system installs.</p>
+            <a href="#request" data-service="Heating">Learn More</a>
+          </article>
+          <article class="service-card" id="cooling">
+            <SnowIcon></SnowIcon>
+            <h3>Cooling</h3>
+            <p>AC repair, replacements, and maintenance for total comfort.</p>
+            <a href="#request" data-service="Cooling">Learn More</a>
+          </article>
+          <article class="service-card">
+            <ClockIcon></ClockIcon>
+            <h3>Maintenance</h3>
+            <p>Preventive tune-ups to keep your systems running strong.</p>
+            <a href="#request" data-service="Maintenance">Learn More</a>
+          </article>
+          <article class="service-card">
+            <ShieldIcon></ShieldIcon>
+            <h3>Emergency Service</h3>
+            <p>24/7 response for plumbing, heating, and cooling emergencies.</p>
+            <a href="#request" data-service="Emergency">Learn More</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="about">
+        <div>
+          <h2>Built on Honest Service</h2>
+          <p>
+            For over 40 years, Mesa has been the go-to choice for homeowners across Boulder County. We believe in doing the job right, treating you with respect, and standing behind our work.
+          </p>
+          <div class="value-grid">
+            <div><ShieldIcon></ShieldIcon><h3>Honest, Upfront Pricing</h3><p>No surprises. No pressure. Just clear answers and fair prices.</p></div>
+            <div><FamilyIcon></FamilyIcon><h3>Local &amp; Family-Owned</h3><p>Proudly serving Boulder County since 1982. We're your neighbors.</p></div>
+            <div><ClockIcon></ClockIcon><h3>On-Time, Every Time</h3><p>We value your time with reliable service and on-time arrivals.</p></div>
+          </div>
+        </div>
+        <div class="photo-card" aria-label="Mesa service van illustration">
+          <div class="sky"></div>
+          <div class="van-large"><span>MESA</span><small>Plumbing &middot; Heating &middot; Cooling</small></div>
+        </div>
+      </section>
+
+      <section class="proof-band">
+        <div>
+          <h2>Trusted by Boulder County Homeowners</h2>
+          <div class="proof-row">
+            <div class="big-rating"><strong>4.8</strong> <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <small>Based on 900+ reviews</small></div>
+            <blockquote>&quot;Mesa came out the same day, fixed our issue fast, and the price was exactly what they quoted. Highly recommend!&quot;<cite>Boulder Homeowner</cite></blockquote>
+            <div class="stats"><span><strong>900+</strong> 5-Star Reviews</span><span><strong>40+</strong> Years in Business</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bottom-grid">
+        <div class="service-area-card" id="areas">
+          <h2>Proudly Serving Boulder County</h2>
+          <p>From the Front Range to the mountain communities, we're here for you.</p>
+          <div class="map-card" aria-label="Boulder County service area map">
+            <span style="left: 35%; top: 52%">Boulder</span>
+            <span style="left: 54%; top: 36%">Erie</span>
+            <span style="left: 62%; top: 52%">Lafayette</span>
+            <span style="left: 72%; top: 45%">Firestone</span>
+            <span style="left: 56%; top: 62%">Louisville</span>
+            <span style="left: 51%; top: 74%">Superior</span>
+            <span style="left: 48%; top: 22%">Longmont</span>
+          </div>
+          <a class="button button-outline" href="#request">View All Service Areas</a>
+        </div>
+
+        <div class="faq-card" id="faq">
+          <h2>Frequently Asked Questions</h2>
+          <details><summary>Do you offer 24/7 emergency services?</summary><p>Yes. Call any time at <a href="tel:+17206802303">(720) 680-2303</a> for urgent plumbing, heating, or cooling help.</p></details>
+          <details><summary>How much will it cost?</summary><p>Mesa uses clear, upfront pricing after diagnosing your system, so you know the price before work begins.</p></details>
+          <details><summary>Are you licensed and insured?</summary><p>Yes. Mesa highlights licensed and insured service across plumbing, heating, cooling, and maintenance work.</p></details>
+          <details><summary>Do you offer financing?</summary><p>Financing options may be available for qualifying repairs and replacements. Ask during your estimate.</p></details>
+          <details><summary>What areas do you serve?</summary><p>Boulder, Longmont, Erie, Lafayette, Firestone, Louisville, Superior, and nearby Boulder County communities.</p></details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div><h2>Ready for Reliable Home Comfort?</h2><p>Call now or schedule online. We're ready to help.</p></div>
+        <a href="tel:+17206802303">(720) 680-2303</a>
+        <a class="button button-light" href="#request">Schedule Now</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top" aria-label="Mesa home">
+        <span class="brand-main">MESA</span>
+        <span class="brand-service">PLUMBING &middot; HEATING &middot; COOLING</span>
+      </a>
+      <nav aria-label="Footer navigation">
+        <a href="#plumbing">Plumbing</a>
+        <a href="#heating">Heating</a>
+        <a href="#cooling">Cooling</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/search/top?q=mesa%20plumbing%20heating%20and%20cooling" aria-label="Facebook">f</a>
+        <a href="https://www.google.com/search?q=Mesa+Plumbing+Heating+and+Cooling+Boulder" aria-label="Google">G</a>
+        <a href="https://www.yelp.com/search?find_desc=Mesa+Plumbing+Heating+and+Cooling&find_loc=Boulder%2C+CO" aria-label="Yelp">y</a>
+      </div>
+      <small>&copy; 2026 Mesa Plumbing, Heating and Cooling. Local homepage demo.</small>
+    </footer>
+
+    <template id="icons">
+      <svg><symbol id="unused"></symbol></svg>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "mesa-plumbing-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000",
+    "build": "node -e \"require('fs').accessSync('index.html'); require('fs').accessSync('styles.css'); require('fs').accessSync('script.js'); console.log('Static site files verified.')\""
+  }
+}
