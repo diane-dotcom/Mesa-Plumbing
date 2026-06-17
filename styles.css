@@ -100,8 +100,10 @@ svg { display: inline-block; height: 1em; width: 1em; fill: none; stroke: curren
   position: relative;
   z-index: 4;
 }
-.google-dot { color: #4285f4; font-size: 22px; font-weight: 900; }
-.stars { color: var(--gold); letter-spacing: 2px; }
+.google-dot { color: #4285f4; display: inline-flex; }
+.google-dot svg { height: 22px; width: 22px; }
+.stars { color: var(--gold); display: inline-flex; gap: 3px; vertical-align: middle; }
+.stars svg { fill: currentColor; height: 17px; stroke-width: 2.5; width: 17px; }
 
 .hero {
   background:
@@ -295,7 +297,9 @@ details a { color: var(--red); font-weight: 800; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 26px; justify-content: center; }
 .site-footer nav a { font-size: 13px; font-weight: 900; text-transform: uppercase; }
 .footer-socials { display: flex; gap: 18px; }
-.footer-socials a { font-size: 24px; font-weight: 900; }
+.footer-socials a { align-items: center; display: inline-flex; font-size: 24px; font-weight: 900; transition: color .2s ease, transform .2s ease; }
+.footer-socials a:hover { color: var(--red); transform: translateY(-2px); }
+.footer-socials svg { height: 24px; width: 24px; }
 .site-footer small { color: rgba(255,255,255,.55); grid-column: 1 / -1; text-align: center; }
 
 @media (max-width: 1120px) {
