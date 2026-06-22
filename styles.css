@@ -72,10 +72,10 @@ svg { display: inline-block; height: 1em; width: 1em; fill: none; stroke: curren
   left: 50%;
   min-width: 220px;
   opacity: 0;
-  padding: 10px;
+  padding: 18px 10px 10px;
   pointer-events: none;
   position: absolute;
-  top: calc(100% + 16px);
+  top: 100%;
   transform: translate(-50%, 8px);
   transition: opacity .18s ease, transform .18s ease;
 }
