@@ -6,7 +6,7 @@
     <title>Boulder Plumbing &amp; Sewer Locations | Mesa Plumbing &amp; Sewer</title>
     <meta
       name="description"
-      content="View Mesa Plumbing & Sewer service locations across Boulder County, including Boulder, Longmont, Lafayette, Louisville, and nearby communities."
+      content="View Mesa Plumbing & Sewer service areas and Google Business Profile maps for Boulder, Longmont, Broomfield, Thornton, Commerce City, Lakewood, Arvada, Lafayette, and nearby communities."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,9 +16,9 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="services-page">
+  <body class="locations-reference-page">
     <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="Mesa home">
+      <a class="brand" href="/" aria-label="Mesa home">
         <img class="brand-logo" src="assets/mesa_logo_transparent.png" alt="Mesa Plumbing and Sewer Company Boulder" />
       </a>
 
@@ -39,7 +39,7 @@
             <a href="services.html#furnace-repair">Furnace Repair</a>
           </div>
         </div>
-        <a href="locations.html">Locations</a>
+        <a href="locations.html" class="is-active">Locations</a>
       </nav>
 
       <div class="header-actions">
@@ -47,19 +47,70 @@
           <i data-lucide="phone-call"></i>
           <span>Call<br /><strong>(720) 680-2303</strong></span>
         </a>
-        <a class="button button-red header-schedule" href="#request">Schedule Now <i data-lucide="arrow-right"></i></a>
+        <a class="button button-red header-schedule" href="tel:+17206802303">Schedule Now <i data-lucide="arrow-right"></i></a>
       </div>
     </header>
 
-    <main id="homepage-clone" aria-live="polite">
-      <span id="request"></span>
-      <span id="plumbing-repair"></span>
-      <span id="sewer-drain"></span>
-      <span id="water-heater-service"></span>
-      <span id="emergency-plumbing"></span>
-      <span id="contact"></span>
-      <span id="locations"></span>
+    <main>
+      <section class="locations-reference-hero" aria-labelledby="locations-title">
+        <div class="locations-reference-copy">
+          <p class="locations-eyebrow"><i data-lucide="map-pin"></i> Our Service Areas</p>
+          <h1 id="locations-title">Our <span>Service Areas</span></h1>
+          <p class="locations-subheadline">Proudly serving Colorado and nearby areas.</p>
+          <span class="locations-red-line" aria-hidden="true"></span>
+          <p>
+            Mesa provides trusted plumbing, heating, cooling, sewer, and drain services across Boulder County and nearby communities. Local experts. Fast response. Always here when you need us.
+          </p>
+
+          <div class="locations-city-chips" aria-label="Mesa service area cities">
+            <a href="/boulder" class="is-active"><i data-lucide="map-pin"></i>Boulder</a>
+            <a href="#service-maps"><i data-lucide="map-pin"></i>Longmont</a>
+            <a href="#service-maps"><i data-lucide="map-pin"></i>Broomfield</a>
+            <a href="#service-maps"><i data-lucide="map-pin"></i>Thornton</a>
+            <a href="#service-maps"><i data-lucide="map-pin"></i>Commerce City</a>
+            <a href="#service-maps"><i data-lucide="map-pin"></i>Lakewood</a>
+            <a href="#service-maps"><i data-lucide="map-pin"></i>Arvada</a>
+            <a href="#service-maps"><i data-lucide="map-pin"></i>Lafayette</a>
+          </div>
+
+          <div class="locations-reference-actions">
+            <a class="button button-red" href="#service-maps"><i data-lucide="map-pin"></i> View All Service Areas <i data-lucide="arrow-right"></i></a>
+            <a class="button button-dark" href="tel:+17206802303"><i data-lucide="calendar-days"></i> Schedule Service <i data-lucide="arrow-right"></i></a>
+          </div>
+
+        </div>
+
+        <div class="locations-reference-map-panel" aria-label="Mesa Google Business Profile map embeds">
+          <div class="locations-map-grid" id="service-maps">
+            <article class="locations-gbp-card is-primary">
+              <iframe title="Mesa Plumbing Boulder Google Business Profile map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.6148246577477!2d-105.245935023455!3d40.01705047986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bf1cc19a1865d%3A0xc9ce44cbcc130f0a!2sMesa%20Plumbing%2C%20Heating%20and%20Cooling!5e0!3m2!1sen!2sph!4v1781731090707!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div><strong>Mesa Plumbing</strong><small>1740 38th Street Boulder, CO</small></div>
+              <span>Primary Area</span>
+            </article>
+            <article class="locations-gbp-card">
+              <iframe title="Mesa Drain Cleaning Boulder Google Business Profile map" src="https://www.google.com/maps?q=6260%20Lookout%20Road%20%23201%20Boulder%2C%20CO&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div><strong>Mesa Drain Cleaning</strong><small>6260 Lookout Road #201 Boulder, CO</small></div>
+            </article>
+            <article class="locations-gbp-card">
+              <iframe title="Mesa Sewer Repair Boulder Google Business Profile map" src="https://www.google.com/maps?q=3050%20Broadway%20Ste%20311%20Boulder%2C%20CO&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div><strong>Mesa Sewer Repair</strong><small>3050 Broadway Ste 311 Boulder, CO</small></div>
+            </article>
+            <article class="locations-gbp-card">
+              <iframe title="McAdams Plumbing Broomfield Google Business Profile map" src="https://www.google.com/maps?q=6343%20W%20120th%20Avenue%20Suite%20101%20Broomfield%2C%20CO&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div><strong>McAdams Plumbing</strong><small>6343 W 120th Avenue Suite 101 Broomfield, CO</small></div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="locations-neighbor-note" aria-label="Mesa service promise">
+        <span></span>
+        <div><i data-lucide="hand-heart"></i><strong>Neighbors Helping Neighbors</strong><small>We treat every home like it's our own.</small></div>
+        <span></span>
+      </section>
     </main>
+
     <div id="homepage-footer-clone"></div>
 
     <script>
@@ -67,165 +118,10 @@
         .then((response) => response.text())
         .then((html) => {
           const source = new DOMParser().parseFromString(html, 'text/html');
-          const main = source.querySelector('main');
           const footer = source.querySelector('footer');
-          if (main) {
-            const clonedMain = main.cloneNode(true);
-            const hero = clonedMain.querySelector('.hero');
-            const heroForm = hero?.querySelector('.request-card');
-            const heroContent = hero?.querySelector('.hero-content');
-            const servicesSection = clonedMain.querySelector('#services');
-            const topReviewStrip = clonedMain.querySelector('.review-strip');
-            const whySection = clonedMain.querySelector('#about');
-            const faqSection = clonedMain.querySelector('#areas');
-            const serviceDivider = clonedMain.querySelector('.section-divider');
-            const contactSection = clonedMain.querySelector('#contact');
-            const reviewsSection = clonedMain.querySelector('#reviews');
-            const reviewDivider = clonedMain.querySelector('.why-review-divider');
-            const contactDivider = clonedMain.querySelector('.contact-location-divider');
-            const locationsSection = clonedMain.querySelector('#locations');
-
-            hero?.remove();
-            topReviewStrip?.remove();
-            servicesSection?.remove();
-            whySection?.remove();
-            faqSection?.remove();
-            serviceDivider?.remove();
-            reviewDivider?.remove();
-            reviewsSection?.remove();
-            contactSection?.remove();
-            contactDivider?.remove();
-            if (servicesSection) {
-              servicesSection.className = 'section services service-section-reference';
-              servicesSection.innerHTML = `
-                <div class="services-page-shell">
-                  <div class="section-heading">
-                    <p class="section-kicker">Our Services</p>
-                    <h2>Our Core Services</h2>
-                    <p>One trusted team for plumbing, drain cleaning, sewer line repair, water heaters, AC repair, and furnace repair across Boulder County.</p>
-                  </div>
-                  <div class="service-page-grid">
-                    <article class="service-page-card" id="plumbing-repair">
-                      <div class="service-page-photo service-photo-plumbing"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="wrench"></i><h3>Plumbing</h3></div>
-                        <p>Leaks, fixtures, pipe repairs, clogs, and whole-home plumbing help.</p>
-                        <ul><li>Leak detection and repair</li><li>Kitchen and bathroom plumbing</li><li>Fixture installs and replacements</li></ul>
-                        <a href="#request" data-service="Plumbing Repair">View Plumbing Services <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="drain-cleaning">
-                      <div class="service-page-photo service-photo-sewer"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="waves"></i><h3>Drain Cleaning</h3></div>
-                        <p>Clog removal, slow drains, backups, and camera-supported drain diagnostics.</p>
-                        <ul><li>Drain cleaning and clog removal</li><li>Slow drain diagnostics</li><li>Kitchen, bath, and main line drains</li></ul>
-                        <a href="#request" data-service="Sewer & Drain">View Drain Services <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="sewer-line-repair">
-                      <div class="service-page-photo service-photo-pipe"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="construction"></i><h3>Sewer Line Repair</h3></div>
-                        <p>Sewer backups, damaged lines, inspections, repairs, and replacement support.</p>
-                        <ul><li>Sewer camera inspection</li><li>Sewer backup help</li><li>Line repair and replacement support</li></ul>
-                        <a href="#request" data-service="Sewer & Drain">View Sewer Line Repair <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="water-heater-service">
-                      <div class="service-page-photo service-photo-water"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="droplets"></i><h3>Water Heaters</h3></div>
-                        <p>Water heater repairs, replacements, and hot water troubleshooting.</p>
-                        <ul><li>Tank and tankless installs</li><li>No-hot-water diagnostics</li><li>Flush and maintenance service</li></ul>
-                        <a href="#request" data-service="Water Heater">View Water Heater Services <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="ac-repair">
-                      <div class="service-page-photo service-photo-hvac"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="snowflake"></i><h3>AC Repair</h3></div>
-                        <p>Cooling diagnostics, repair visits, tune-ups, and comfort troubleshooting.</p>
-                        <ul><li>AC diagnostics</li><li>Cooling repairs</li><li>Seasonal tune-ups</li></ul>
-                        <a href="#request" data-service="HVAC">View AC Repair <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="furnace-repair">
-                      <div class="service-page-photo service-photo-emergency"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="flame"></i><h3>Furnace Repair</h3></div>
-                        <p>Heating diagnostics, furnace repairs, seasonal service, and safety checks.</p>
-                        <ul><li>Heating diagnostics</li><li>Furnace repair</li><li>Safety and comfort checks</li></ul>
-                        <a href="#request" data-service="HVAC">View Furnace Repair <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              `;
-              const divider = servicesSection.nextElementSibling;
-              if (divider?.classList.contains('section-divider')) {
-                divider.className = 'service-core-divider';
-                divider.innerHTML = '<span></span><i data-lucide="wrench"></i><span></span>';
-              }
-            }
-            if (locationsSection) {
-              locationsSection.insertAdjacentHTML('beforebegin', '<span id="request" class="anchor-offset"></span><span id="contact" class="anchor-offset"></span>');
-              locationsSection.className = 'section locations-section service-location-section locations-page-hero';
-              locationsSection.innerHTML = `
-                <div class="locations-shell">
-                  <div class="locations-heading">
-                    <p class="section-kicker">Locations Near You</p>
-                    <h2>Boulder Plumbing &amp; Sewer Locations Near You</h2>
-                    <p>Choose a nearby Mesa location to see service details, response notes, and the map.</p>
-                  </div>
-                  <div class="locations-grid">
-                    <div class="location-list" aria-label="Service locations">
-                      <button class="location-button is-active" type="button" data-location-button data-location="mesa-main"><i data-lucide="map-pin"></i><span><strong>Mesa Plumbing</strong><small>1740 38th Street Boulder, CO</small></span></button>
-                      <button class="location-button" type="button" data-location-button data-location="mesa-drain-one"><i data-lucide="map-pin"></i><span><strong>Mesa Drain Cleaning</strong><small>6260 Lookout Road #201 Boulder, CO</small></span></button>
-                      <button class="location-button" type="button" data-location-button data-location="mesa-drain-two"><i data-lucide="map-pin"></i><span><strong>Mesa Sewer Repair</strong><small>3050 Broadway Ste 311 Boulder, CO</small></span></button>
-                      <button class="location-button" type="button" data-location-button data-location="mcadams"><i data-lucide="map-pin"></i><span><strong>McAdams Plumbing</strong><small>6343 W 120th Avenue Suite 101 Broomfield, CO</small></span></button>
-                    </div>
-                    <div class="location-map" aria-label="Mesa Plumbing map"><iframe data-location-map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.6148246577477!2d-105.245935023455!3d40.01705047986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bf1cc19a1865d%3A0xc9ce44cbcc130f0a!2sMesa%20Plumbing%2C%20Heating%20and%20Cooling!5e0!3m2!1sen!2sph!4v1781731090707!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                    <aside class="location-details" aria-live="polite">
-                      <span class="location-details-label">Selected Location</span>
-                      <h3 data-location-title>Mesa Plumbing</h3>
-                      <p data-location-copy>1740 38th Street Boulder, CO. Mesa serves local plumbing, sewer, drain, water heater, and emergency service needs from this Boulder-area location.</p>
-                      <div class="location-detail-list">
-                        <span><i data-lucide="clock-3"></i><strong data-location-response>Same-day appointments available</strong></span>
-                        <span><i data-lucide="wrench"></i><strong data-location-services>Plumbing, sewer, drains, water heaters</strong></span>
-                        <span><i data-lucide="external-link"></i><strong><a data-location-link href="https://www.google.com/search?q=Mesa+Plumbing,+Heating+and+Cooling&stick=H4sIAAAAAAAA_-NgU1I1qLAwN0tKM0xONrRMNLQwM02xMqhItkxONTFJTgIKGhukGSQuYlXyTS1OVAjIKc1NysxL11HwSE0sATIUEvNSFJzz83OAbACPp1A4TgAAAA&hl=en&mat=CYEs_6XAdIs2ElcBa0lj_2hYosnL0kKF4aUrOm20SEOoZ3bRoD_fsaEW-FpXYQxSCMNUreyTY4LnwXaINVrLonftcb8tlUEJ25rz-Yrmpfy9DINMMN2ypvXlPOzbci196nk&authuser=0" target="_blank" rel="noreferrer">Open Location Map</a></strong></span>
-                        <span><i data-lucide="phone"></i><strong><a href="tel:+17206802303">Call (720) 680-2303</a></strong></span>
-                      </div>
-                      <a class="button button-red" href="tel:+17206802303">Schedule Service <i data-lucide="arrow-right"></i></a>
-                    </aside>
-                  </div>
-                  <div class="locations-area-buttons" aria-label="Additional service areas">
-                    <span>Also serving</span>
-                    <a href="/boulder">Boulder</a>
-                    <button type="button">Longmont</button>
-                    <button type="button">Broomfield</button>
-                    <button type="button">Thornton</button>
-                    <button type="button">Commerce City</button>
-                    <button type="button">Lakewood</button>
-                    <button type="button">Arvada</button>
-                    <button type="button">Lafayette</button>
-                  </div>
-                </div>
-              `;
-            }
-            document.querySelector('#homepage-clone').replaceWith(clonedMain);
-          }
           if (footer) document.querySelector('#homepage-footer-clone').replaceWith(footer.cloneNode(true));
           if (window.lucide) window.lucide.createIcons({ attrs: { 'aria-hidden': 'true' } });
           document.dispatchEvent(new Event('mesa:content-loaded'));
-          const hashMap = {
-            '#plumbing-repair': '#plumbing',
-            '#sewer-drain': '#sewer',
-            '#water-heater-service': '#water-heaters',
-            '#emergency-plumbing': '#request',
-          };
-          const target = document.querySelector(hashMap[window.location.hash] || window.location.hash);
-          target?.scrollIntoView();
         });
     </script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
