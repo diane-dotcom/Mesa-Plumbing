@@ -28,8 +28,28 @@
 
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="/">Home</a>
-        <a href="services.html">Services</a>
-        <a href="locations.html">Locations</a>
+        <div class="nav-dropdown">
+          <a href="services.html">Services</a>
+          <div class="nav-menu" aria-label="Services menu">
+            <a href="services.html#plumbing-repair">Plumbing</a>
+            <a href="services.html#drain-cleaning">Drain Cleaning</a>
+            <a href="services.html#sewer-line-repair">Sewer Line Repair</a>
+            <a href="services.html#water-heater-service">Water Heaters</a>
+            <a href="services.html#ac-repair">AC Repair</a>
+            <a href="services.html#furnace-repair">Furnace Repair</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="locations.html">Locations</a>
+          <div class="nav-menu" aria-label="Locations menu">
+            <a href="locations.html">Boulder</a>
+            <a href="locations.html">Longmont</a>
+            <a href="locations.html">Broomfield</a>
+            <a href="locations.html">Thornton</a>
+            <a href="locations.html">Arvada</a>
+            <a href="locations.html">Lafayette</a>
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">
@@ -96,34 +116,34 @@
                   <div class="section-heading">
                     <p class="section-kicker">Our Services</p>
                     <h2>Our Core Services</h2>
-                    <p>One trusted team for plumbing repairs, sewer and drain work, water heaters, and emergency service across Boulder County.</p>
+                    <p>One trusted team for plumbing, drain cleaning, sewer line repair, water heaters, AC repair, and furnace repair across Boulder County.</p>
                   </div>
                   <div class="service-page-grid">
                     <article class="service-page-card" id="plumbing-repair">
                       <div class="service-page-photo service-photo-plumbing"></div>
                       <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="wrench"></i><h3>Plumbing Repairs</h3></div>
+                        <div class="service-page-title"><i data-lucide="wrench"></i><h3>Plumbing</h3></div>
                         <p>Leaks, fixtures, pipe repairs, clogs, and whole-home plumbing help.</p>
                         <ul><li>Leak detection and repair</li><li>Kitchen and bathroom plumbing</li><li>Fixture installs and replacements</li></ul>
                         <a href="#request" data-service="Plumbing Repair">View Plumbing Services <i data-lucide="arrow-right"></i></a>
                       </div>
                     </article>
-                    <article class="service-page-card" id="sewer-drain">
+                    <article class="service-page-card" id="drain-cleaning">
                       <div class="service-page-photo service-photo-sewer"></div>
                       <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="waves"></i><h3>Sewer &amp; Drain</h3></div>
-                        <p>Drain cleaning, sewer backups, line inspections, and repairs.</p>
-                        <ul><li>Drain cleaning and clog removal</li><li>Sewer camera inspection</li><li>Sewer backup help</li></ul>
-                        <a href="#request" data-service="Sewer & Drain">View Sewer Services <i data-lucide="arrow-right"></i></a>
+                        <div class="service-page-title"><i data-lucide="waves"></i><h3>Drain Cleaning</h3></div>
+                        <p>Clog removal, slow drains, backups, and camera-supported drain diagnostics.</p>
+                        <ul><li>Drain cleaning and clog removal</li><li>Slow drain diagnostics</li><li>Kitchen, bath, and main line drains</li></ul>
+                        <a href="#request" data-service="Sewer & Drain">View Drain Services <i data-lucide="arrow-right"></i></a>
                       </div>
                     </article>
-                    <article class="service-page-card" id="hvac-service">
-                      <div class="service-page-photo service-photo-hvac"></div>
+                    <article class="service-page-card" id="sewer-line-repair">
+                      <div class="service-page-photo service-photo-pipe"></div>
                       <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="fan"></i><h3>HVAC</h3></div>
-                        <p>Heating and cooling support for comfort issues, tune-ups, repairs, and system troubleshooting.</p>
-                        <ul><li>Heating and AC diagnostics</li><li>Seasonal tune-ups</li><li>Comfort system repairs</li></ul>
-                        <a href="#request" data-service="HVAC">View HVAC Services <i data-lucide="arrow-right"></i></a>
+                        <div class="service-page-title"><i data-lucide="construction"></i><h3>Sewer Line Repair</h3></div>
+                        <p>Sewer backups, damaged lines, inspections, repairs, and replacement support.</p>
+                        <ul><li>Sewer camera inspection</li><li>Sewer backup help</li><li>Line repair and replacement support</li></ul>
+                        <a href="#request" data-service="Sewer & Drain">View Sewer Line Repair <i data-lucide="arrow-right"></i></a>
                       </div>
                     </article>
                     <article class="service-page-card" id="water-heater-service">
@@ -135,22 +155,22 @@
                         <a href="#request" data-service="Water Heater">View Water Heater Services <i data-lucide="arrow-right"></i></a>
                       </div>
                     </article>
-                    <article class="service-page-card" id="pipe-repair">
-                      <div class="service-page-photo service-photo-pipe"></div>
+                    <article class="service-page-card" id="ac-repair">
+                      <div class="service-page-photo service-photo-hvac"></div>
                       <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="route"></i><h3>Pipe Repair</h3></div>
-                        <p>Help for old pipes, burst lines, corrosion, leaks behind walls, and fixture supply issues.</p>
-                        <ul><li>Burst pipe repair</li><li>Water line repairs</li><li>Leak isolation and fixes</li></ul>
-                        <a href="#request" data-service="Pipe Repair">View Pipe Repair <i data-lucide="arrow-right"></i></a>
+                        <div class="service-page-title"><i data-lucide="snowflake"></i><h3>AC Repair</h3></div>
+                        <p>Cooling diagnostics, repair visits, tune-ups, and comfort troubleshooting.</p>
+                        <ul><li>AC diagnostics</li><li>Cooling repairs</li><li>Seasonal tune-ups</li></ul>
+                        <a href="#request" data-service="HVAC">View AC Repair <i data-lucide="arrow-right"></i></a>
                       </div>
                     </article>
-                    <article class="service-page-card" id="emergency-plumbing">
+                    <article class="service-page-card" id="furnace-repair">
                       <div class="service-page-photo service-photo-emergency"></div>
                       <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="siren"></i><h3>Emergency Plumbing</h3></div>
-                        <p>24/7 response for urgent leaks, backups, clogs, and pipe issues.</p>
-                        <ul><li>Burst pipes and leaks</li><li>Backups and urgent clogs</li><li>Fast scheduling when available</li></ul>
-                        <a href="tel:+17206802303">Get Emergency Help <i data-lucide="arrow-right"></i></a>
+                        <div class="service-page-title"><i data-lucide="flame"></i><h3>Furnace Repair</h3></div>
+                        <p>Heating diagnostics, furnace repairs, seasonal service, and safety checks.</p>
+                        <ul><li>Heating diagnostics</li><li>Furnace repair</li><li>Safety and comfort checks</li></ul>
+                        <a href="#request" data-service="HVAC">View Furnace Repair <i data-lucide="arrow-right"></i></a>
                       </div>
                     </article>
                   </div>

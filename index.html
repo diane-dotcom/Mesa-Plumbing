@@ -28,8 +28,28 @@
 
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="/">Home</a>
-        <a href="services.html">Services</a>
-        <a href="locations.html">Locations</a>
+        <div class="nav-dropdown">
+          <a href="services.html">Services</a>
+          <div class="nav-menu" aria-label="Services menu">
+            <a href="services.html#plumbing-repair">Plumbing</a>
+            <a href="services.html#drain-cleaning">Drain Cleaning</a>
+            <a href="services.html#sewer-line-repair">Sewer Line Repair</a>
+            <a href="services.html#water-heater-service">Water Heaters</a>
+            <a href="services.html#ac-repair">AC Repair</a>
+            <a href="services.html#furnace-repair">Furnace Repair</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="locations.html">Locations</a>
+          <div class="nav-menu" aria-label="Locations menu">
+            <a href="locations.html">Boulder</a>
+            <a href="locations.html">Longmont</a>
+            <a href="locations.html">Broomfield</a>
+            <a href="locations.html">Thornton</a>
+            <a href="locations.html">Arvada</a>
+            <a href="locations.html">Lafayette</a>
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">
@@ -44,12 +64,7 @@
     <main>
       <section class="review-strip" aria-label="Review summary">
         <span class="google-dot" aria-hidden="true">
-          <svg class="google-logo" viewBox="0 0 24 24">
-            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09Z" />
-            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23Z" />
-            <path fill="#fbbc05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18A10.95 10.95 0 0 0 1 12c0 1.77.42 3.45 1.18 4.94l3.66-2.84Z" />
-            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06L5.84 9.9C6.71 7.31 9.14 5.38 12 5.38Z" />
-          </svg>
+          <img class="google-logo" src="assets/google-g-logo.svg" alt="" />
         </span>
         <strong>Google Reviews</strong>
         <span>Boulder County rates us 4.8</span>
@@ -100,7 +115,7 @@
               <h2>Request Your Service</h2>
               <p>Fast scheduling - most calls handled same day. No after-hours upcharge.</p>
             </div>
-            <div class="rating-line"><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span><strong>4.8</strong><span>/ 5 &middot; 900+ Google reviews</span></div>
+            <div class="rating-line"><img class="google-logo" src="assets/google-g-logo.svg" alt="" /><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span><strong>4.8</strong><span>/ 5 &middot; 900+ Google reviews</span></div>
 
             <fieldset>
               <legend>What do you need?</legend>
@@ -128,15 +143,21 @@
         </div>
         <div class="service-grid">
           <article class="service-card" id="plumbing">
-            <i data-lucide="droplet"></i>
-            <h3>Plumbing Repairs</h3>
+            <i data-lucide="wrench"></i>
+            <h3>Plumbing</h3>
             <p>Leaks, fixtures, pipe repairs, clogs, and whole-home plumbing help.</p>
             <a href="#request" data-service="Plumbing Repair">Learn More <i data-lucide="arrow-right"></i></a>
           </article>
-          <article class="service-card" id="sewer">
+          <article class="service-card" id="drain-cleaning">
             <i data-lucide="waves"></i>
-            <h3>Sewer &amp; Drain</h3>
-            <p>Drain cleaning, sewer backups, line inspections, and repairs.</p>
+            <h3>Drain Cleaning</h3>
+            <p>Clog removal, slow drains, backups, and camera-supported drain diagnostics.</p>
+            <a href="#request" data-service="Sewer & Drain">Learn More <i data-lucide="arrow-right"></i></a>
+          </article>
+          <article class="service-card" id="sewer-line-repair">
+            <i data-lucide="construction"></i>
+            <h3>Sewer Line Repair</h3>
+            <p>Sewer backups, damaged lines, inspections, repairs, and replacement support.</p>
             <a href="#request" data-service="Sewer & Drain">Learn More <i data-lucide="arrow-right"></i></a>
           </article>
           <article class="service-card" id="water-heaters">
@@ -145,11 +166,17 @@
             <p>Water heater repairs, replacements, and hot water troubleshooting.</p>
             <a href="#request" data-service="Water Heater">Learn More <i data-lucide="arrow-right"></i></a>
           </article>
-          <article class="service-card">
-            <i data-lucide="shield-alert"></i>
-            <h3>Emergency Plumbing</h3>
-            <p>24/7 response for urgent leaks, backups, clogs, and pipe issues.</p>
-            <a href="#request" data-service="Emergency Plumbing">Learn More <i data-lucide="arrow-right"></i></a>
+          <article class="service-card" id="ac-repair">
+            <i data-lucide="snowflake"></i>
+            <h3>AC Repair</h3>
+            <p>Cooling diagnostics, repair visits, tune-ups, and comfort troubleshooting.</p>
+            <a href="#request" data-service="HVAC">Learn More <i data-lucide="arrow-right"></i></a>
+          </article>
+          <article class="service-card" id="furnace-repair">
+            <i data-lucide="flame"></i>
+            <h3>Furnace Repair</h3>
+            <p>Heating diagnostics, furnace repairs, seasonal service, and safety checks.</p>
+            <a href="#request" data-service="HVAC">Learn More <i data-lucide="arrow-right"></i></a>
           </article>
         </div>
         <div class="services-cta">
@@ -169,7 +196,7 @@
         <div class="why-layout">
           <div class="why-card">
             <p class="section-kicker">Why Choose Mesa</p>
-            <h2>Built on Honest Service</h2>
+            <h2>Locally Run, Not Private Equity</h2>
             <p>
               For over 40 years, Mesa has been the go-to choice for homeowners across Boulder County. We're proud to deliver honest work, treat you with respect, and show up when you need us with dependable service you can count on.
             </p>
@@ -199,12 +226,7 @@
             <strong>4.8</strong>
             <span class="stars" aria-label="5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span>
             <span class="google-dot" aria-hidden="true">
-              <svg class="google-logo" viewBox="0 0 24 24">
-                <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09Z" />
-                <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23Z" />
-                <path fill="#fbbc05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18A10.95 10.95 0 0 0 1 12c0 1.77.42 3.45 1.18 4.94l3.66-2.84Z" />
-                <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06L5.84 9.9C6.71 7.31 9.14 5.38 12 5.38Z" />
-              </svg>
+              <img class="google-logo" src="assets/google-g-logo.svg" alt="" />
             </span>
           </div>
           <p class="reviews-count">based on <strong>900+</strong> reviews</p>
@@ -215,7 +237,7 @@
             <div class="review-card-top">
               <span class="review-avatar">JR</span>
               <div><strong>James R.</strong><span class="verified"><i data-lucide="badge-check"></i></span><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span></div>
-              <span class="review-google">G</span>
+              <img class="review-google" src="assets/google-g-logo.svg" alt="Google" />
             </div>
             <p>Mesa was fast, professional, and fixed our leak the same day. Highly recommend!</p>
             <small>2 days ago</small>
@@ -224,7 +246,7 @@
             <div class="review-card-top">
               <span class="review-avatar">ST</span>
               <div><strong>Sarah T.</strong><span class="verified"><i data-lucide="badge-check"></i></span><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span></div>
-              <span class="review-google">G</span>
+              <img class="review-google" src="assets/google-g-logo.svg" alt="Google" />
             </div>
             <p>They replaced our water heater quickly and did a fantastic job. Great service and fair pricing!</p>
             <small>5 days ago</small>
@@ -233,7 +255,7 @@
             <div class="review-card-top">
               <span class="review-avatar">DL</span>
               <div><strong>David L.</strong><span class="verified"><i data-lucide="badge-check"></i></span><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span></div>
-              <span class="review-google">G</span>
+              <img class="review-google" src="assets/google-g-logo.svg" alt="Google" />
             </div>
             <p>Honest, reliable, and very professional. Mesa is our go-to plumbing and sewer team.</p>
             <small>1 week ago</small>
@@ -242,7 +264,7 @@
             <div class="review-card-top">
               <span class="review-avatar">MK</span>
               <div><strong>Melissa K.</strong><span class="verified"><i data-lucide="badge-check"></i></span><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span></div>
-              <span class="review-google">G</span>
+              <img class="review-google" src="assets/google-g-logo.svg" alt="Google" />
             </div>
             <p>Excellent experience from start to finish. They explained everything and left everything spotless.</p>
             <small>1 week ago</small>
@@ -251,7 +273,7 @@
             <div class="review-card-top">
               <span class="review-avatar">AN</span>
               <div><strong>Amanda N.</strong><span class="verified"><i data-lucide="badge-check"></i></span><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span></div>
-              <span class="review-google">G</span>
+              <img class="review-google" src="assets/google-g-logo.svg" alt="Google" />
             </div>
             <p>Friendly team, clear communication, and the repair was completed right the first time.</p>
             <small>2 weeks ago</small>
@@ -259,7 +281,7 @@
         </div>
 
         <div class="reviews-action">
-          <a class="button google-review-button" href="https://www.google.com/search?q=Mesa+plumbing+and+sewer+company+Boulder+reviews" target="_blank" rel="noreferrer" data-review-toggle><span class="review-google">G</span> Read More Reviews on Google <i data-lucide="arrow-right"></i></a>
+          <a class="button google-review-button" href="https://www.google.com/search?q=Mesa+plumbing+and+sewer+company+Boulder+reviews" target="_blank" rel="noreferrer" data-review-toggle><img class="review-google" src="assets/google-g-logo.svg" alt="Google" /> Read More Reviews on Google <i data-lucide="arrow-right"></i></a>
         </div>
       </section>
 
@@ -419,10 +441,12 @@
 
         <nav class="footer-column footer-services" aria-label="Footer services">
           <h2>Services</h2>
-          <a href="services.html#plumbing-repair"><i data-lucide="wrench"></i> Plumbing Services</a>
-          <a href="services.html#sewer-drain"><i data-lucide="waves"></i> Sewer &amp; Drain</a>
+          <a href="services.html#plumbing-repair"><i data-lucide="wrench"></i> Plumbing</a>
+          <a href="services.html#drain-cleaning"><i data-lucide="waves"></i> Drain Cleaning</a>
+          <a href="services.html#sewer-line-repair"><i data-lucide="construction"></i> Sewer Line Repair</a>
           <a href="services.html#water-heater-service"><i data-lucide="droplets"></i> Water Heaters</a>
-          <a href="services.html#emergency-plumbing"><i data-lucide="siren"></i> Emergency Plumbing</a>
+          <a href="services.html#ac-repair"><i data-lucide="snowflake"></i> AC Repair</a>
+          <a href="services.html#furnace-repair"><i data-lucide="flame"></i> Furnace Repair</a>
         </nav>
 
         <div class="footer-column footer-contact">
