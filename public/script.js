@@ -202,6 +202,17 @@ const bindMesaContent = (root = document) => {
     });
   });
 
+  root.querySelectorAll('.faq-accordion details:not([data-mesa-bound])').forEach((details) => {
+    details.dataset.mesaBound = 'true';
+    details.addEventListener('toggle', () => {
+      if (!details.open) return;
+
+      details.closest('.faq-accordion')?.querySelectorAll('details').forEach((item) => {
+        if (item !== details) item.open = false;
+      });
+    });
+  });
+
   root.querySelectorAll('[data-lead-form]:not([data-mesa-bound])').forEach((leadForm) => {
     leadForm.dataset.mesaBound = 'true';
     leadForm.addEventListener('submit', (event) => {

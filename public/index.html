@@ -77,47 +77,49 @@
           </div>
         </div>
 
-        <div class="hero-content">
-          <p class="eyebrow">Your local neighborhood experts &middot; Since 1982</p>
-          <h1>Boulder's Trusted <span>Plumbing</span> &amp; <span>Sewer</span> Company</h1>
-          <p class="hero-copy">
-            From burst pipes to sewer line backups, Mesa helps Boulder County homeowners with honest pricing, dependable plumbing repairs, drain cleaning, and same-day emergency service.
-          </p>
-          <div class="trust-pills" aria-label="Trust highlights">
-            <span><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-            <span><i data-lucide="house"></i> Family-Owned &amp; Local</span>
-            <span><i data-lucide="clock-3"></i> 24/7 Emergency</span>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Your local neighborhood experts &middot; Since 1982</p>
+            <h1>Boulder's Trusted <span class="hero-nowrap"><span>Plumbing</span> &amp; <span>Sewer</span></span> <span class="hero-company-line">Company</span></h1>
+            <p class="hero-copy">
+              From burst pipes to sewer line backups, Mesa helps Boulder County homeowners with honest pricing, dependable plumbing repairs, drain cleaning, and same-day emergency service.
+            </p>
+            <div class="trust-pills" aria-label="Trust highlights">
+              <span><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
+              <span><i data-lucide="house"></i> Family-Owned &amp; Local</span>
+              <span><i data-lucide="clock-3"></i> 24/7 Emergency</span>
+            </div>
+            <div class="hero-buttons">
+              <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
+              <a class="button button-dark" href="#request">Schedule Online <i data-lucide="arrow-right"></i></a>
+            </div>
           </div>
-          <div class="hero-buttons">
-            <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
-            <a class="button button-dark" href="#request">Schedule Online <i data-lucide="arrow-right"></i></a>
-          </div>
+
+          <form class="request-card" id="request" data-lead-form>
+            <div class="request-card-top">
+              <h2>Request Your Service</h2>
+              <p>Fast scheduling - most calls handled same day. No after-hours upcharge.</p>
+            </div>
+            <div class="rating-line"><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span><strong>4.8</strong><span>/ 5 &middot; 900+ Google reviews</span></div>
+
+            <fieldset>
+              <legend>What do you need?</legend>
+              <label class="service-choice"><input type="radio" name="service" value="Plumbing Repair" checked /> <i data-lucide="wrench"></i> Plumbing Repair</label>
+              <label class="service-choice"><input type="radio" name="service" value="Sewer & Drain" /> <i data-lucide="waves"></i> Sewer &amp; Drain</label>
+              <label class="service-choice"><input type="radio" name="service" value="Water Heater" /> <i data-lucide="droplets"></i> Water Heater</label>
+              <label class="service-choice"><input type="radio" name="service" value="Emergency Plumbing" /> <i data-lucide="clock-3"></i> Emergency</label>
+            </fieldset>
+
+            <div class="form-grid">
+              <label>Full Name <input name="name" placeholder="Jane Doe" required /></label>
+              <label>Phone <input name="phone" placeholder="(720) 555-0123" required /></label>
+            </div>
+            <label class="service-address-field">Service Address <input name="address" placeholder="Street, Boulder, CO" required /></label>
+            <button class="button button-red full" type="submit">Get My Free Estimate <i data-lucide="arrow-right"></i></button>
+            <small>Licensed &amp; insured &middot; No-obligation quote</small>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
         </div>
-
-        <form class="request-card" id="request" data-lead-form>
-          <div class="request-card-top">
-            <h2>Request Your Service</h2>
-            <p>Fast scheduling - most calls handled same day. No after-hours upcharge.</p>
-          </div>
-          <div class="rating-line"><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span><strong>4.8</strong><span>/ 5 &middot; 900+ Google reviews</span></div>
-
-          <fieldset>
-            <legend>What do you need?</legend>
-            <label class="service-choice"><input type="radio" name="service" value="Plumbing Repair" checked /> <i data-lucide="wrench"></i> Plumbing Repair</label>
-            <label class="service-choice"><input type="radio" name="service" value="Sewer & Drain" /> <i data-lucide="waves"></i> Sewer &amp; Drain</label>
-            <label class="service-choice"><input type="radio" name="service" value="Water Heater" /> <i data-lucide="droplets"></i> Water Heater</label>
-            <label class="service-choice"><input type="radio" name="service" value="Emergency Plumbing" /> <i data-lucide="clock-3"></i> Emergency</label>
-          </fieldset>
-
-          <div class="form-grid">
-            <label>Full Name <input name="name" placeholder="Jane Doe" required /></label>
-            <label>Phone <input name="phone" placeholder="(720) 555-0123" required /></label>
-          </div>
-          <label class="service-address-field">Service Address <input name="address" placeholder="Street, Boulder, CO" required /></label>
-          <button class="button button-red full" type="submit">Get My Free Estimate <i data-lucide="arrow-right"></i></button>
-          <small>Licensed &amp; insured &middot; No-obligation quote</small>
-          <p class="form-message" role="status" aria-live="polite"></p>
-        </form>
       </section>
 
       <section class="section services" id="services">
