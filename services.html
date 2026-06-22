@@ -80,6 +80,14 @@
             const reviewDivider = clonedMain.querySelector('.why-review-divider');
             const contactDivider = clonedMain.querySelector('.contact-location-divider');
             const locationsSection = clonedMain.querySelector('#locations');
+            const whySection = clonedMain.querySelector('.why-choose');
+
+            if (whySection) {
+              const whyKicker = whySection.querySelector('.section-kicker');
+              const whyHeading = whySection.querySelector('h2');
+              if (whyKicker) whyKicker.textContent = 'Locally Run, Not Private Equity';
+              if (whyHeading) whyHeading.textContent = 'Locally Run, Not Private Equity';
+            }
 
             hero?.classList.add('service-hero-reference');
             heroForm?.remove();
