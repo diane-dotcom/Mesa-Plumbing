@@ -984,7 +984,10 @@ input:focus, textarea:focus, select:focus { border-color: var(--red); box-shadow
   .value-grid > div svg { height: 42px; width: 42px; }
   .review-cards { grid-template-columns: 1fr; }
   .review-card:nth-child(n + 4) { display: none; }
-  .faq-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .faq-feature-grid { gap: 10px; grid-template-columns: 1fr; max-width: 280px; }
+  .faq-feature-grid div { border-radius: 10px; gap: 8px; min-height: 78px; padding: 12px 14px; }
+  .faq-feature-grid svg { height: 26px; width: 26px; }
+  .faq-feature-grid strong { font-size: 13px; line-height: 1.2; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { width: 290px; }
   .footer-logo { max-width: 290px; }
