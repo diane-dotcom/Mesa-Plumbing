@@ -880,6 +880,21 @@ input:focus, textarea:focus, select:focus { border-color: var(--red); box-shadow
   .hero-inner { padding-left: 48px; padding-right: 48px; }
 }
 
+@media (min-width: 1121px) and (max-width: 1440px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(390px, 460px);
+  }
+
+  .hero-content {
+    max-width: 760px;
+  }
+
+  .request-card {
+    justify-self: end;
+    transform: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero-inner { padding-left: 40px; padding-right: 40px; }
 }
@@ -947,6 +962,12 @@ input:focus, textarea:focus, select:focus { border-color: var(--red); box-shadow
   .hero-art { opacity: .32; }
   .service-van { left: 18%; width: 330px; }
   .trust-pills, .form-grid, fieldset, .service-grid, .value-grid, .contact-form-grid { grid-template-columns: 1fr; }
+  .why-card { text-align: center; }
+  .why-card > p:not(.section-kicker) { margin-left: auto; margin-right: auto; }
+  .value-grid { margin-left: auto; margin-right: auto; max-width: 430px; }
+  .value-grid > div { text-align: center; }
+  .value-grid > div svg { display: block; margin-left: auto; margin-right: auto; }
+  .trust-note { justify-content: center; text-align: left; }
   .services { padding-left: 20px; padding-right: 20px; }
   .services .section-heading { margin-bottom: 24px; }
   .service-grid { display: flex; flex-direction: column; gap: 14px; max-width: 430px; width: 100%; }
