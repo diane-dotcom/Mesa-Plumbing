@@ -790,8 +790,8 @@ input:focus, textarea:focus, select:focus { border-color: var(--red); box-shadow
 .service-photo-plumbing { background-image: linear-gradient(135deg, rgba(6,11,16,.12), rgba(6,11,16,.02)), url("/assets/service-1-plumbing-repairs.png"); background-position: center; background-size: cover; }
 .service-photo-sewer { background-image: linear-gradient(135deg, rgba(6,11,16,.18), rgba(6,11,16,.04)), url("/assets/service-2-sewer-drain.png"); background-position: center; background-size: cover; }
 .service-photo-drain { background-image: linear-gradient(135deg, rgba(6,11,16,.18), rgba(6,11,16,.04)), url("/assets/service-2-sewer-drain.png"); background-position: center; background-size: cover; }
-.service-photo-hvac { background-image: linear-gradient(135deg, rgba(6,11,16,.16), rgba(6,11,16,.04)), url("/assets/service-3-hvac.png"); background-position: center; background-size: cover; }
-.service-photo-water { background-image: linear-gradient(135deg, rgba(6,11,16,.12), rgba(6,11,16,.02)), url("/assets/service-4-water-heaters.png"); background-position: center; background-size: cover; }
+.service-photo-hvac { background-image: linear-gradient(135deg, rgba(6,11,16,.16), rgba(6,11,16,.04)), url("/assets/mesa-ac-repair.png"); background-position: 58% 24%; background-size: cover; }
+.service-photo-water { background-image: linear-gradient(135deg, rgba(6,11,16,.12), rgba(6,11,16,.02)), url("/assets/mesa-water-heater.png"); background-position: center; background-size: cover; }
 .service-photo-pipe { background-image: linear-gradient(135deg, rgba(6,11,16,.16), rgba(6,11,16,.04)), url("/assets/service-5-pipe-repair.png"); background-position: center; background-size: cover; }
 .service-photo-emergency { background-image: linear-gradient(135deg, rgba(6,11,16,.18), rgba(6,11,16,.04)), url("/assets/service-6-emergency-plumbing.png"); background-position: center; background-size: cover; }
 .service-page-body { display: flex; flex: 1; flex-direction: column; padding: 22px; }
