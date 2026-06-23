@@ -984,8 +984,12 @@ input:focus, textarea:focus, select:focus { border-color: var(--red); box-shadow
   .value-grid > div svg { height: 42px; width: 42px; }
   .review-cards { grid-template-columns: 1fr; }
   .review-card:nth-child(n + 4) { display: none; }
-  .faq-feature-grid { gap: 10px; grid-template-columns: 1fr; max-width: 280px; }
-  .faq-feature-grid div { border-radius: 10px; gap: 8px; min-height: 78px; padding: 12px 14px; }
+  .faq-feature-grid { gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 340px; }
+  .faq-feature-grid div { border-radius: 10px; gap: 8px; min-height: 76px; padding: 12px 10px; }
+  .faq-feature-grid div:nth-child(1) { order: 2; }
+  .faq-feature-grid div:nth-child(2) { order: 1; }
+  .faq-feature-grid div:nth-child(3) { order: 4; }
+  .faq-feature-grid div:nth-child(4) { order: 3; }
   .faq-feature-grid svg { height: 26px; width: 26px; }
   .faq-feature-grid strong { font-size: 13px; line-height: 1.2; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -1027,7 +1031,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--red); box-shadow
   fieldset, .form-grid, .request-card > label { padding-left: 16px; padding-right: 16px; }
   .rating-line { padding-left: 16px; padding-right: 16px; }
   .section { padding-left: 14px; padding-right: 14px; }
-  .faq-feature-grid, .location-hero-chips { grid-template-columns: 1fr; }
+  .location-hero-chips { grid-template-columns: 1fr; }
   .locations-area-buttons { grid-template-columns: 1fr; }
   .footer-brand, .footer-logo { max-width: 100%; width: 100%; }
   .footer-socials { flex-wrap: wrap; }
