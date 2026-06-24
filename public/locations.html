@@ -32,14 +32,26 @@
           <button class="nav-trigger" type="button">Services</button>
           <div class="nav-menu" aria-label="Services menu">
             <a href="services.html">Plumbing Service</a>
-            <a href="services.html#drain-cleaning">Drain Cleaning</a>
-            <a href="services.html#sewer-line-repair">Sewer Line Repair</a>
-            <a href="services.html#water-heater-service">Water Heaters</a>
-            <a href="services.html#ac-repair">AC Repair</a>
-            <a href="services.html#furnace-repair">Furnace Repair</a>
+            <a href="services.html?service=drain-cleaning">Drain Cleaning</a>
+            <a href="services.html?service=sewer-line-repair">Sewer Line Repair</a>
+            <a href="services.html?service=water-heaters">Water Heaters</a>
+            <a href="services.html?service=ac-repair">AC Repair</a>
+            <a href="services.html?service=furnace-repair">Furnace Repair</a>
           </div>
         </div>
-        <a href="locations.html" class="is-active">Locations</a>
+        <div class="nav-dropdown">
+          <a class="nav-trigger" href="locations.html">Locations</a>
+          <div class="nav-menu" aria-label="Locations menu">
+            <a href="boulder.html">Boulder</a>
+            <a href="locations.html">Longmont</a>
+            <a href="locations.html">Broomfield</a>
+            <a href="locations.html">Thornton</a>
+            <a href="locations.html">Commerce City</a>
+            <a href="locations.html">Lakewood</a>
+            <a href="locations.html">Arvada</a>
+            <a href="locations.html">Lafayette</a>
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">
@@ -52,78 +64,147 @@
     </header>
 
     <main>
-      <section class="locations-reference-hero" aria-labelledby="locations-title">
-        <div class="locations-reference-copy">
-          <p class="locations-eyebrow"><i data-lucide="map-pin"></i> Our Service Areas</p>
-          <h1 id="locations-title">Our <span>Service Areas</span></h1>
-          <p class="locations-subheadline">Proudly serving Colorado and nearby areas.</p>
-          <span class="locations-red-line" aria-hidden="true"></span>
-          <p>
-            Mesa provides trusted plumbing, heating, cooling, sewer, and drain services across Boulder County and nearby communities. Local experts. Fast response. Always here when you need us.
-          </p>
-
-          <div class="locations-city-chips" aria-label="Mesa service area cities">
-            <a href="/boulder" class="is-active"><i data-lucide="map-pin"></i>Boulder</a>
-            <a href="#service-maps"><i data-lucide="map-pin"></i>Longmont</a>
-            <a href="#service-maps"><i data-lucide="map-pin"></i>Broomfield</a>
-            <a href="#service-maps"><i data-lucide="map-pin"></i>Thornton</a>
-            <a href="#service-maps"><i data-lucide="map-pin"></i>Commerce City</a>
-            <a href="#service-maps"><i data-lucide="map-pin"></i>Lakewood</a>
-            <a href="#service-maps"><i data-lucide="map-pin"></i>Arvada</a>
-            <a href="#service-maps"><i data-lucide="map-pin"></i>Lafayette</a>
+      <section class="locations-hero-reference" aria-labelledby="locations-hero-title">
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><i data-lucide="map-pin"></i> Locations Near You</p>
+          <h1 id="locations-hero-title">Mesa Service Locations <span>Near You</span></h1>
+          <p class="hero-copy">Find nearby Mesa plumbing, sewer, drain, heating, and cooling service locations across Boulder County and surrounding communities.</p>
+          <div class="location-hero-chips" aria-label="Service area quick links">
+            <button class="is-active" type="button" data-location="boulder">Boulder</button>
+            <button type="button" data-location="longmont">Longmont</button>
+            <button type="button" data-location="broomfield">Broomfield</button>
+            <button type="button" data-location="thornton">Thornton</button>
+            <button type="button" data-location="commerce-city">Commerce City</button>
+            <button type="button" data-location="lakewood">Lakewood</button>
+            <button type="button" data-location="arvada">Arvada</button>
+            <button type="button" data-location="lafayette">Lafayette</button>
           </div>
-
-          <div class="locations-reference-actions">
-            <a class="button button-red" href="#service-maps"><i data-lucide="map-pin"></i> View All Service Areas <i data-lucide="arrow-right"></i></a>
-            <a class="button button-dark" href="tel:+17206802303"><i data-lucide="calendar-days"></i> Schedule Service <i data-lucide="arrow-right"></i></a>
+          <div class="location-hero-trust">
+            <span><strong>24/7</strong> Emergency plumbing support</span>
+            <span><strong>4.8</strong> Google rating from 900+ reviews</span>
+            <span class="location-hero-google"><img class="google-logo" src="assets/google-g-logo.svg" alt="" /><strong>Local</strong> Boulder County service team</span>
           </div>
-
         </div>
-
-        <div class="locations-reference-map-panel" aria-label="Mesa Google Business Profile map embeds">
-          <div class="locations-map-grid" id="service-maps">
-            <article class="locations-gbp-card is-primary">
-              <iframe title="Mesa Plumbing Boulder Google Business Profile map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.6148246577477!2d-105.245935023455!3d40.01705047986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bf1cc19a1865d%3A0xc9ce44cbcc130f0a!2sMesa%20Plumbing%2C%20Heating%20and%20Cooling!5e0!3m2!1sen!2sph!4v1781731090707!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div><strong>Mesa Plumbing</strong><small>1740 38th Street Boulder, CO</small></div>
-              <span>Primary Area</span>
-            </article>
-            <article class="locations-gbp-card">
-              <iframe title="Mesa Drain Cleaning Boulder Google Business Profile map" src="https://www.google.com/maps?q=6260%20Lookout%20Road%20%23201%20Boulder%2C%20CO&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div><strong>Mesa Drain Cleaning</strong><small>6260 Lookout Road #201 Boulder, CO</small></div>
-            </article>
-            <article class="locations-gbp-card">
-              <iframe title="Mesa Sewer Repair Boulder Google Business Profile map" src="https://www.google.com/maps?q=3050%20Broadway%20Ste%20311%20Boulder%2C%20CO&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div><strong>Mesa Sewer Repair</strong><small>3050 Broadway Ste 311 Boulder, CO</small></div>
-            </article>
-            <article class="locations-gbp-card">
-              <iframe title="McAdams Plumbing Broomfield Google Business Profile map" src="https://www.google.com/maps?q=6343%20W%20120th%20Avenue%20Suite%20101%20Broomfield%2C%20CO&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div><strong>McAdams Plumbing</strong><small>6343 W 120th Avenue Suite 101 Broomfield, CO</small></div>
-            </article>
+        <div class="location-hero-map-card">
+          <div class="location-hero-map location-hero-map-embed">
+            <iframe data-hero-location-map src="https://www.google.com/maps?q=Boulder%2C%20Colorado&output=embed" title="Boulder service area map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-
+          <div class="location-hero-selected">
+            <span><i data-lucide="map-pin"></i></span>
+            <div>
+              <div class="location-hero-popup-title"><h2 data-hero-location-title>Boulder, CO</h2><strong>Selected</strong></div>
+              <p data-hero-location-copy>Mesa provides trusted plumbing, heating, cooling, sewer, and drain service in Boulder. Local experts. Fast response. Here when you need us.</p>
+              <div class="location-hero-popup-stats">
+                <span><i data-lucide="clock-3"></i><strong data-hero-location-response>24/7 Emergency Service</strong></span>
+                <span><i data-lucide="shield-check"></i><strong data-hero-location-services>Licensed &amp; Insured</strong></span>
+                <span><i data-lucide="phone"></i><strong>Call (720) 680-2303</strong></span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="locations-neighbor-note" aria-label="Mesa service promise">
-        <span></span>
-        <div><i data-lucide="hand-heart"></i><strong>Neighbors Helping Neighbors</strong><small>We treat every home like it's our own.</small></div>
-        <span></span>
+      <section class="section locations-section" id="locations">
+        <div class="locations-shell">
+          <div class="locations-heading">
+            <p class="section-kicker">Locations Near You</p>
+            <h2>Boulder Plumbing &amp; Sewer Locations Near You</h2>
+            <p>Choose a nearby Mesa location to see service details, response notes, and the map.</p>
+          </div>
+
+          <div class="locations-grid">
+            <div class="location-list" aria-label="Service locations">
+              <button class="location-button is-active" type="button" data-location-button data-location="mesa-main">
+                <i data-lucide="map-pin"></i>
+                <span><strong>Mesa Plumbing</strong><small>1740 38th Street Boulder, CO</small></span>
+              </button>
+              <button class="location-button" type="button" data-location-button data-location="mesa-drain-one">
+                <i data-lucide="map-pin"></i>
+                <span><strong>Mesa Drain Cleaning</strong><small>6260 Lookout Road #201 Boulder, CO</small></span>
+              </button>
+              <button class="location-button" type="button" data-location-button data-location="mesa-drain-two">
+                <i data-lucide="map-pin"></i>
+                <span><strong>Mesa Sewer Repair</strong><small>3050 Broadway Ste 311 Boulder, CO</small></span>
+              </button>
+              <button class="location-button" type="button" data-location-button data-location="mcadams">
+                <i data-lucide="map-pin"></i>
+                <span><strong>McAdams Plumbing</strong><small>6343 W 120th Avenue Suite 101 Broomfield, CO</small></span>
+              </button>
+            </div>
+
+            <div class="location-map" aria-label="Mesa Plumbing map">
+              <iframe data-location-map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.6148246577477!2d-105.245935023455!3d40.01705047986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bf1cc19a1865d%3A0xc9ce44cbcc130f0a!2sMesa%20Plumbing%2C%20Heating%20and%20Cooling!5e0!3m2!1sen!2sph!4v1781731090707!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <aside class="location-details" aria-live="polite">
+              <span class="location-details-label">Selected Location</span>
+              <h3 data-location-title>Mesa Plumbing</h3>
+              <p data-location-copy>1740 38th Street Boulder, CO. Mesa serves local plumbing, sewer, drain, water heater, and emergency service needs from this Boulder-area location.</p>
+              <div class="location-detail-list">
+                <span><i data-lucide="clock-3"></i><strong data-location-response>Same-day appointments available</strong></span>
+                <span><i data-lucide="wrench"></i><strong data-location-services>Plumbing, sewer, drains, water heaters</strong></span>
+                <span><i data-lucide="external-link"></i><strong><a data-location-link href="https://www.google.com/search?q=Mesa+Plumbing,+Heating+and+Cooling&stick=H4sIAAAAAAAA_-NgU1I1qLAwN0tKM0xONrRMNLQwM02xMqhItkxONTFJTgIKGhukGSQuYlXyTS1OVAjIKc1NysxL11HwSE0sATIUEvNSFJzz83OAbACPp1A4TgAAAA&hl=en&mat=CYEs_6XAdIs2ElcBa0lj_2hYosnL0kKF4aUrOm20SEOoZ3bRoD_fsaEW-FpXYQxSCMNUreyTY4LnwXaINVrLonftcb8tlUEJ25rz-Yrmpfy9DINMMN2ypvXlPOzbci196nk&authuser=0" target="_blank" rel="noreferrer">Open Location Map</a></strong></span>
+                <span><i data-lucide="phone"></i><strong><a href="tel:+17206802303">Call (720) 680-2303</a></strong></span>
+              </div>
+              <a class="button button-red" href="tel:+17206802303">Schedule Service <i data-lucide="arrow-right"></i></a>
+            </aside>
+          </div>
+        </div>
       </section>
     </main>
 
-    <div id="homepage-footer-clone"></div>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-company">
+          <a class="brand footer-brand" href="/" aria-label="Mesa home">
+            <img class="brand-logo footer-logo" src="assets/mesa_logo_transparent.png" alt="Mesa Plumbing and Sewer Company Boulder" />
+          </a>
+          <p>Trusted plumbing and sewer solutions built on honest service, quality workmanship, and dependable care for Boulder County homeowners.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/search/top?q=mesa%20plumbing%20sewer%20boulder" aria-label="Facebook"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.04 3.66 9.22 8.44 9.94v-7.03H7.92v-2.91h2.52V9.84c0-2.49 1.48-3.86 3.75-3.86 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.77l-.44 2.91h-2.33V22C18.34 21.28 22 17.1 22 12.06Z" /></svg></a>
+            <a href="https://www.instagram.com/explore/search/keyword/?q=mesa%20plumbing" aria-label="Instagram"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" /></svg></a>
+            <a href="https://x.com/search?q=Mesa%20plumbing%20and%20sewer%20company%20Boulder" aria-label="X"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M18.9 2h3.05l-6.66 7.61L23.12 22h-6.14l-4.81-6.29L6.66 22H3.6l7.12-8.14L3.2 2h6.3l4.35 5.75L18.9 2Zm-1.07 17.82h1.69L8.58 4.07H6.76l11.07 15.75Z" /></svg></a>
+            <a href="https://www.youtube.com/results?search_query=Mesa+plumbing+and+sewer+Boulder" aria-label="YouTube"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.55 3.58 12 3.58 12 3.58s-7.55 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.12c1.85.5 9.4.5 9.4.5s7.55 0 9.4-.5a3 3 0 0 0 2.1-2.12A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.55v-7.1L15.86 12 9.6 15.55Z" /></svg></a>
+          </div>
+        </div>
 
-    <script>
-      fetch('index.html')
-        .then((response) => response.text())
-        .then((html) => {
-          const source = new DOMParser().parseFromString(html, 'text/html');
-          const footer = source.querySelector('footer');
-          if (footer) document.querySelector('#homepage-footer-clone').replaceWith(footer.cloneNode(true));
-          if (window.lucide) window.lucide.createIcons({ attrs: { 'aria-hidden': 'true' } });
-          document.dispatchEvent(new Event('mesa:content-loaded'));
-        });
-    </script>
+        <nav class="footer-column" aria-label="Footer quick links">
+          <h2>Quick Links</h2>
+          <a href="/">Home</a>
+          <a href="/#about">About Us</a>
+          <a href="/#faq">FAQs</a>
+          <a href="locations.html">Locations</a>
+        </nav>
+
+        <nav class="footer-column footer-services" aria-label="Footer services">
+          <h2>Services</h2>
+          <a href="services.html"><i data-lucide="wrench"></i> Plumbing</a>
+          <a href="services.html?service=drain-cleaning"><i data-lucide="waves"></i> Drain Cleaning</a>
+          <a href="services.html?service=sewer-line-repair"><i data-lucide="construction"></i> Sewer Line Repair</a>
+          <a href="services.html?service=water-heaters"><i data-lucide="droplets"></i> Water Heaters</a>
+          <a href="services.html?service=ac-repair"><i data-lucide="snowflake"></i> AC Repair</a>
+          <a href="services.html?service=furnace-repair"><i data-lucide="flame"></i> Furnace Repair</a>
+        </nav>
+
+        <div class="footer-column footer-contact">
+          <h2>Contact</h2>
+          <a href="tel:+17206802303"><i data-lucide="phone"></i> (720) 680-2303</a>
+          <a href="mailto:info@mesaplumbing.com"><i data-lucide="mail"></i> info@mesaplumbing.com</a>
+          <span><i data-lucide="map-pin"></i> Boulder County, CO &amp; Surrounding Areas</span>
+          <span><i data-lucide="clock-3"></i> 24/7 Emergency Service</span>
+          <a class="button button-red footer-call-button" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Mesa Plumbing &amp; Sewer. All rights reserved.</span>
+        <a href="#top">Privacy Policy</a>
+        <a href="#top">Terms of Service</a>
+        <span>Licensed &amp; Insured</span>
+        <span>Serving Boulder County Since 1982</span>
+      </div>
+    </footer>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
   </body>

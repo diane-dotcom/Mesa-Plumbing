@@ -32,14 +32,26 @@
           <button class="nav-trigger" type="button">Services</button>
           <div class="nav-menu" aria-label="Services menu">
             <a href="services.html">Plumbing Service</a>
-            <a href="services.html#drain-cleaning">Drain Cleaning</a>
-            <a href="services.html#sewer-line-repair">Sewer Line Repair</a>
-            <a href="services.html#water-heater-service">Water Heaters</a>
-            <a href="services.html#ac-repair">AC Repair</a>
-            <a href="services.html#furnace-repair">Furnace Repair</a>
+            <a href="services.html?service=drain-cleaning">Drain Cleaning</a>
+            <a href="services.html?service=sewer-line-repair">Sewer Line Repair</a>
+            <a href="services.html?service=water-heaters">Water Heaters</a>
+            <a href="services.html?service=ac-repair">AC Repair</a>
+            <a href="services.html?service=furnace-repair">Furnace Repair</a>
           </div>
         </div>
-        <a href="locations.html" class="is-active">Locations</a>
+        <div class="nav-dropdown">
+          <a class="nav-trigger" href="locations.html">Locations</a>
+          <div class="nav-menu" aria-label="Locations menu">
+            <a href="boulder.html">Boulder</a>
+            <a href="locations.html">Longmont</a>
+            <a href="locations.html">Broomfield</a>
+            <a href="locations.html">Thornton</a>
+            <a href="locations.html">Commerce City</a>
+            <a href="locations.html">Lakewood</a>
+            <a href="locations.html">Arvada</a>
+            <a href="locations.html">Lafayette</a>
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">
@@ -52,67 +64,206 @@
     </header>
 
     <main>
-      <section class="boulder-hero" aria-labelledby="boulder-title">
-        <div class="boulder-hero-copy">
-          <p class="breadcrumb">Home / Locations / <span>Boulder, CO</span></p>
-          <h1 id="boulder-title">Plumbing Services <span>in Boulder, CO</span></h1>
+      <section class="review-strip hero-review-strip" aria-label="Review summary">
+        <span class="google-dot" aria-hidden="true">
+          <img class="google-logo" src="assets/google-g-logo.svg" alt="" />
+        </span>
+        <strong>Google Reviews</strong>
+        <span>Boulder County rates us 4.8</span>
+        <span class="stars" aria-label="5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span>
+        <span>Based on 900+ reviews</span>
+      </section>
+
+      <section class="hero" id="home">
+        <div class="hero-art" aria-hidden="true">
+          <img class="hero-bg-photo" src="assets/mesa-truck-3050.png" alt="" />
+          <div class="hero-photo-scrim"></div>
+        </div>
+
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Your local neighborhood experts &middot; Since 1982</p>
+            <h1>Boulder's Trusted <span class="hero-nowrap"><span>Plumbing</span> &amp; <span>Sewer</span></span> <span class="hero-company-line">Company</span></h1>
+            <p class="hero-copy">
+              From burst pipes to sewer line backups, Mesa helps Boulder County homeowners with honest pricing, dependable plumbing repairs, drain cleaning, and same-day emergency service.
+            </p>
+            <div class="trust-pills" aria-label="Trust highlights">
+              <span><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
+              <span><i data-lucide="house"></i> Family-Owned &amp; Local</span>
+              <span><i data-lucide="clock-3"></i> 24/7 Emergency</span>
+            </div>
+            <div class="hero-buttons">
+              <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
+              <a class="button button-dark" href="#request">Schedule Online <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+
+          <form class="request-card" id="request" data-lead-form>
+            <div class="request-card-top">
+              <h2>Request Your Service</h2>
+              <p>Fast scheduling - most calls handled same day. No after-hours upcharge.</p>
+            </div>
+            <div class="rating-line"><img class="google-logo" src="assets/google-g-logo.svg" alt="" /><span class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span><strong>4.8</strong><span>/ 5 &middot; 900+ Google reviews</span></div>
+
+            <fieldset>
+              <legend>What do you need?</legend>
+              <label class="service-choice"><input type="radio" name="service" value="Plumbing Repair" checked /> <i data-lucide="wrench"></i> Plumbing Repair</label>
+              <label class="service-choice"><input type="radio" name="service" value="Sewer & Drain" /> <i data-lucide="waves"></i> Sewer &amp; Drain</label>
+              <label class="service-choice"><input type="radio" name="service" value="Water Heater" /> <i data-lucide="droplets"></i> Water Heater</label>
+              <label class="service-choice"><input type="radio" name="service" value="Emergency Plumbing" /> <i data-lucide="clock-3"></i> Emergency</label>
+            </fieldset>
+
+            <div class="form-grid">
+              <label>Full Name <input name="name" placeholder="Jane Doe" required /></label>
+              <label>Phone <input name="phone" placeholder="(720) 555-0123" required /></label>
+            </div>
+            <label class="service-address-field">Service Address <input name="address" placeholder="Street, Boulder, CO" required /></label>
+            <button class="button button-red full" type="submit">Get My Free Estimate <i data-lucide="arrow-right"></i></button>
+            <small>Licensed &amp; insured &middot; No-obligation quote</small>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="boulder-service-showcase" aria-labelledby="boulder-service-title">
+        <div class="boulder-feature-visual" aria-hidden="true">
+          <img src="assets/mesa-truck-3050.png" alt="" />
+        </div>
+
+        <div class="boulder-service-copy">
+          <h2 id="boulder-service-title">Professional Plumbing &amp; HVAC in Boulder, <span>Colorado</span></h2>
           <span class="boulder-red-line" aria-hidden="true"></span>
-          <p>
-            Mesa Plumbing is proud to provide expert plumbing, heating, cooling, and drain services to homeowners and businesses in Boulder and the surrounding areas.
-          </p>
-          <div class="boulder-trust-list" aria-label="Boulder service highlights">
-            <span><i data-lucide="users"></i> Local, licensed &amp; insured professionals</span>
-            <span><i data-lucide="clock-3"></i> Fast response times, honest pricing</span>
-            <span><i data-lucide="badge-check"></i> 24/7 emergency plumbing services</span>
+          <p>From plumbing repairs and sewer &amp; drain service to boiler repair, heating and cooling help, and water heaters, <strong>Mesa Plumbing, Heating &amp; Cooling</strong> has you covered. Need help now? Our emergency plumbing team is available <strong>24/7.</strong></p>
+          <div class="boulder-service-tile-grid" aria-label="Boulder service links">
+            <a href="services.html"><i data-lucide="wrench"></i><strong>Plumbing Repairs</strong></a>
+            <a href="services.html?service=drain-cleaning"><i data-lucide="waves"></i><strong>Sewer &amp; Drain</strong></a>
+            <a href="services.html"><i data-lucide="flame"></i><strong>Boiler Repair</strong></a>
+            <a href="services.html?service=ac-repair"><i data-lucide="snowflake"></i><strong>HVAC Help</strong></a>
+            <a href="services.html?service=water-heaters"><i data-lucide="droplets"></i><strong>Water Heaters</strong></a>
+            <a href="tel:+17206802303"><i data-lucide="clock-3"></i><strong>24/7 Emergency</strong></a>
           </div>
-          <div class="boulder-hero-actions">
-            <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> (720) 680-2303</a>
-            <a class="button button-white" href="#request">Schedule Online <i data-lucide="arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="boulder-hero-art" aria-hidden="true">
-          <span class="boulder-sun"></span>
-          <span class="boulder-mountain boulder-mountain-one"></span>
-          <span class="boulder-mountain boulder-mountain-two"></span>
-          <span class="boulder-city"></span>
-          <span class="boulder-lake"></span>
+          <p class="boulder-service-note">Mesa Plumbing, Heating &amp; Cooling is proud to provide trusted, high-quality service to <strong>Boulder</strong> homes and families.</p>
         </div>
       </section>
 
-      <section class="boulder-overview" aria-label="Boulder plumbing services">
-        <div class="boulder-service-card">
-          <h2>Services We Offer in Boulder</h2>
-          <div class="boulder-service-list">
-            <a href="services.html#plumbing-repair"><i data-lucide="wrench"></i><strong>Plumbing Repairs</strong><i data-lucide="chevron-right"></i></a>
-            <a href="services.html#drain-cleaning"><i data-lucide="waves"></i><strong>Sewer &amp; Drain Services</strong><i data-lucide="chevron-right"></i></a>
-            <a href="services.html#water-heater-service"><i data-lucide="droplets"></i><strong>Water Heaters</strong><i data-lucide="chevron-right"></i></a>
-            <a href="services.html#sewer-line-repair"><i data-lucide="construction"></i><strong>Pipe Repair</strong><i data-lucide="chevron-right"></i></a>
-            <a href="services.html#plumbing-repair"><i data-lucide="shower-head"></i><strong>Fixture Installation</strong><i data-lucide="chevron-right"></i></a>
-            <a href="services.html#plumbing-repair"><i data-lucide="droplet"></i><strong>Water Filtration</strong><i data-lucide="chevron-right"></i></a>
-            <a href="services.html"><i data-lucide="badge-check"></i><strong>Emergency Plumbing</strong><i data-lucide="chevron-right"></i></a>
-          </div>
-          <a class="boulder-view-all" href="services.html">View All Services <i data-lucide="arrow-right"></i></a>
+      <section class="boulder-homeowners-section" aria-labelledby="boulder-homeowners-title">
+        <div class="boulder-homeowners-photo">
+          <img src="assets/homepage-pic.png" alt="Mesa technician arriving at a Boulder home" />
+          <h2 class="boulder-homeowners-photo-title" id="boulder-homeowners-title">Proudly Serving <span>Boulder Homeowners</span></h2>
         </div>
+        <div class="boulder-homeowners-card">
+          <span class="boulder-red-line" aria-hidden="true"></span>
+          <p>Mesa Plumbing is proud to serve Boulder homes with dependable plumbing, heating, cooling, and emergency service delivered by local experts you can count on.</p>
+          <div class="boulder-homeowner-list" aria-label="Boulder homeowner services">
+            <a href="services.html"><i data-lucide="wrench"></i><span><strong>Plumbing Repairs</strong><small>Fast, reliable repairs for leaks, fixtures, pipes, and more.</small></span></a>
+            <a href="services.html?service=drain-cleaning"><i data-lucide="gauge"></i><span><strong>Drains &amp; Sewer</strong><small>Clear clogs and keep your system flowing smoothly.</small></span></a>
+            <a href="services.html?service=ac-repair"><i data-lucide="flame"></i><span><strong>Boiler &amp; HVAC Support</strong><small>Expert service to keep your home comfortable year-round.</small></span></a>
+          </div>
+          <a class="button button-red" href="#request">Schedule Service <i data-lucide="arrow-right"></i></a>
+        </div>
+      </section>
 
-        <div class="boulder-why-card">
-          <h2>Why Boulder Homeowners Choose Mesa</h2>
-          <div class="boulder-proof-list">
-            <div><i data-lucide="users"></i><span><strong>Local Experts</strong><small>We know Boulder's homes, plumbing systems, and building codes.</small></span></div>
-            <div><i data-lucide="hand-coins"></i><span><strong>Upfront Pricing</strong><small>Honest, transparent pricing with no surprises.</small></span></div>
-            <div><i data-lucide="award"></i><span><strong>Quality Workmanship</strong><small>We use top-quality parts and stand behind our work.</small></span></div>
-            <div><i data-lucide="alarm-clock"></i><span><strong>Always Available</strong><small>24/7 emergency service when you need us most.</small></span></div>
+      <section class="boulder-challenges-section" aria-labelledby="boulder-challenges-title">
+        <div class="boulder-challenges-photo">
+          <img src="assets/mesa-backdrop.png" alt="Mesa service van near the Boulder foothills" />
+        </div>
+        <div class="boulder-challenges-panel">
+          <div class="boulder-panel-logo" aria-label="Mesa Plumbing Heating Cooling">MESA <span>Plumbing &middot; Heating &middot; Cooling</span></div>
+          <h2 id="boulder-challenges-title">Common Plumbing Challenges in Boulder, CO</h2>
+          <span class="boulder-red-line" aria-hidden="true"></span>
+          <p>Boulder homes face unique plumbing, drain, heating, and comfort challenges throughout the year. Mesa helps local homeowners solve issues quickly with honest service and dependable workmanship.</p>
+          <div class="boulder-challenge-list" aria-label="Common Boulder plumbing and HVAC problems">
+            <a href="services.html"><i data-lucide="snowflake"></i><span><strong>Frozen &amp; Burst Pipes</strong> Cold snaps and winter weather can put exposed pipes at risk.</span></a>
+            <a href="services.html?service=drain-cleaning"><i data-lucide="waves"></i><span><strong>Drain &amp; Sewer Backups</strong> Older lines, roots, and buildup can lead to slow drains and messy backups.</span></a>
+            <a href="services.html?service=water-heaters"><i data-lucide="droplet"></i><span><strong>Hard Water Build-Up</strong> Mineral-heavy water can affect fixtures, water heaters, and overall plumbing performance.</span></a>
+            <a href="services.html"><i data-lucide="flame"></i><span><strong>Boiler &amp; Heating Issues</strong> Older systems may struggle to keep homes comfortable during colder months.</span></a>
+            <a href="services.html?service=ac-repair"><i data-lucide="fan"></i><span><strong>HVAC Comfort Problems</strong> Inconsistent airflow and aging equipment can reduce year-round comfort.</span></a>
+          </div>
+          <p class="boulder-challenge-note">Mesa Plumbing understands these local issues and provides plumbing, sewer &amp; drain, boiler repair, HVAC, and water heater solutions for Boulder homeowners.</p>
+        </div>
+      </section>
+
+      <section class="boulder-about-section" aria-labelledby="boulder-about-title">
+        <div class="boulder-about-bg" aria-hidden="true">
+          <img src="assets/mesa-backdrop.png" alt="" />
+        </div>
+        <div class="boulder-about-card">
+          <div class="boulder-about-logo"><img src="assets/mesa_logo_transparent.png" alt="Mesa Plumbing, Heating and Cooling" /></div>
+          <h2 id="boulder-about-title">All About Boulder, CO</h2>
+          <p>Boulder is one of Colorado's most recognizable communities, known for its mountain views, established neighborhoods, and active homeowners who value quality, comfort, and dependable home service. From historic areas near downtown to newer residential communities, professional plumbing, heating, and cooling support plays an important role in keeping homes running smoothly year-round.</p>
+          <span class="boulder-about-rule" aria-hidden="true"></span>
+          <p>Mesa Plumbing, Heating &amp; Cooling proudly serves Boulder homeowners with expert plumbing repairs, sewer &amp; drain solutions, boiler repair, HVAC service, water heater help, and emergency support. Whether you are dealing with a backed-up drain, aging pipes, heating problems, or cooling issues, our team provides prompt service with honest communication and quality workmanship.</p>
+          <span class="boulder-about-rule" aria-hidden="true"></span>
+          <p>We are proud to support the Boulder community with reliable service, transparent pricing, and local expertise. No matter the size of the project, Mesa is here to help keep Boulder homes safe, comfortable, and efficient in every season.</p>
+        </div>
+      </section>
+
+      <div class="boulder-about-faq-divider" aria-hidden="true"><span></span></div>
+
+      <section class="section faq-section" id="areas">
+        <div class="faq-layout" id="faq">
+          <div class="faq-intro">
+            <p class="section-kicker">FAQs</p>
+            <h2>Frequently Asked <span class="faq-nowrap"><span>Plumbing</span> Questions</span></h2>
+            <p>Got questions? We've got answers. Here are some of the most common questions we get from homeowners.</p>
+            <div class="faq-feature-grid" aria-label="FAQ highlights">
+              <div><i data-lucide="shield-check"></i><strong>Honest Answers</strong></div>
+              <div><i data-lucide="clock-3"></i><strong>Quick Response</strong></div>
+              <div><i data-lucide="users-round"></i><strong>Local &amp; Trusted</strong></div>
+              <div><i data-lucide="wrench"></i><strong>Quality Work</strong></div>
+            </div>
+          </div>
+          <div class="faq-accordion">
+            <details open><summary>Do you offer 24/7 emergency plumbing and sewer services?</summary><p>Yes. We provide 24/7 emergency plumbing and sewer service across Boulder County. When you call, we'll get to you fast.</p></details>
+            <details><summary>How much will it cost?</summary><p>Mesa uses clear, upfront pricing after diagnosing your system, so you know the price before work begins.</p></details>
+            <details><summary>Are you licensed and insured?</summary><p>Yes. Mesa provides licensed and insured plumbing, sewer, drain, and water heater service.</p></details>
+            <details><summary>Do you offer financing options?</summary><p>Financing options may be available for qualifying repairs and replacements. Ask during your estimate.</p></details>
+            <details><summary>What areas do you serve?</summary><p>Boulder, Longmont, Erie, Lafayette, Firestone, Louisville, Superior, and nearby Boulder County communities.</p></details>
           </div>
         </div>
       </section>
 
-      <section class="boulder-cta" id="request">
-        <div>
-          <p class="section-kicker">Boulder Plumbing Help</p>
-          <h2>Need service in Boulder today?</h2>
-          <p>Call Mesa for fast local plumbing, sewer, drain, heating, and cooling help.</p>
+      <section class="locations-hero-reference boulder-locations-hero" aria-labelledby="boulder-locations-hero-title">
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><i data-lucide="map-pin"></i> Locations Near You</p>
+          <h2 id="boulder-locations-hero-title">Mesa Service Locations <span>Near Boulder</span></h2>
+          <p class="hero-copy">Choose a nearby Mesa location to view local service details, map information, and response notes for plumbing, sewer, drain, heating, and cooling help.</p>
+          <div class="location-hero-chips" aria-label="Service area quick links">
+            <button class="is-active" type="button" data-location="boulder">Boulder</button>
+            <button type="button" data-location="longmont">Longmont</button>
+            <button type="button" data-location="broomfield">Broomfield</button>
+            <button type="button" data-location="thornton">Thornton</button>
+            <button type="button" data-location="commerce-city">Commerce City</button>
+            <button type="button" data-location="lakewood">Lakewood</button>
+            <button type="button" data-location="arvada">Arvada</button>
+            <button type="button" data-location="lafayette">Lafayette</button>
+          </div>
+          <div class="location-hero-trust">
+            <span><strong>24/7</strong> Emergency plumbing support</span>
+            <span><strong>4.8</strong> Google rating from 900+ reviews</span>
+            <span class="location-hero-google"><img class="google-logo" src="assets/google-g-logo.svg" alt="" /><strong>Local</strong> Boulder County service team</span>
+          </div>
         </div>
-        <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
+        <div class="location-hero-map-card">
+          <div class="location-hero-map location-hero-map-embed">
+            <iframe data-hero-location-map src="https://www.google.com/maps?q=Boulder%2C%20Colorado&output=embed" title="Boulder service area map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="location-hero-selected">
+            <span><i data-lucide="map-pin"></i></span>
+            <div>
+              <div class="location-hero-popup-title"><h2 data-hero-location-title>Boulder, CO</h2><strong>Selected</strong></div>
+              <p data-hero-location-copy>Mesa provides trusted plumbing, heating, cooling, sewer, and drain service in Boulder. Local experts. Fast response. Here when you need us.</p>
+              <div class="location-hero-popup-stats">
+                <span><i data-lucide="clock-3"></i><strong data-hero-location-response>24/7 Emergency Service</strong></span>
+                <span><i data-lucide="shield-check"></i><strong data-hero-location-services>Licensed &amp; Insured</strong></span>
+                <span><i data-lucide="phone"></i><strong>Call (720) 680-2303</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
@@ -123,10 +274,10 @@
           </a>
           <p>Trusted plumbing and sewer solutions built on honest service, quality workmanship, and dependable care for Boulder County homeowners.</p>
           <div class="footer-socials">
-            <a href="https://www.facebook.com/search/top?q=mesa%20plumbing%20sewer%20boulder" aria-label="Facebook"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M14.2 8.4V6.9c0-.7.5-.9.9-.9h2.3V2.2L14.2 2c-3.6 0-4.5 2.2-4.5 4.4v2H6.8v4.2h2.9V22h4.5v-9.4h3.1l.5-4.2h-3.6Z" /></svg></a>
-            <a href="https://www.instagram.com/explore/search/keyword/?q=mesa%20plumbing" aria-label="Instagram"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" ry="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" /></svg></a>
-            <a href="https://x.com/search?q=Mesa%20plumbing%20and%20sewer%20company%20Boulder" aria-label="X"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M14.7 10.4 22.1 2h-1.8l-6.4 7.3L8.8 2H2.9l7.8 11.2L2.9 22h1.8l6.8-7.7 5.4 7.7h5.9l-8.1-11.6Zm-2.4 2.7-.8-1.1L5.2 3.4H8l5 7 .8 1.1 6.6 9.1h-2.8l-5.3-7.5Z" /></svg></a>
-            <a href="https://www.youtube.com/results?search_query=Mesa+plumbing+and+sewer+Boulder" aria-label="YouTube"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.6 7.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C15.8 3.7 12 3.7 12 3.7s-3.8 0-6.7.2c-.4.1-1.3.1-2.1 1-.6.7-.8 2.3-.8 2.3S2.2 9 2.2 10.8v1.7c0 1.8.2 3.6.2 3.6s.2 1.6.8 2.3c.8.9 1.9.9 2.4 1 1.7.2 6.4.2 6.4.2s3.8 0 6.7-.2c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.3.8-2.3s.2-1.8.2-3.6v-1.7c0-1.8-.2-3.6-.2-3.6ZM10.2 15.1V8.8l5.9 3.2-5.9 3.1Z" /></svg></a>
+            <a href="https://www.facebook.com/search/top?q=mesa%20plumbing%20sewer%20boulder" aria-label="Facebook"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.04 3.66 9.22 8.44 9.94v-7.03H7.92v-2.91h2.52V9.84c0-2.49 1.48-3.86 3.75-3.86 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.77l-.44 2.91h-2.33V22C18.34 21.28 22 17.1 22 12.06Z" /></svg></a>
+            <a href="https://www.instagram.com/explore/search/keyword/?q=mesa%20plumbing" aria-label="Instagram"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" /></svg></a>
+            <a href="https://x.com/search?q=Mesa%20plumbing%20and%20sewer%20company%20Boulder" aria-label="X"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M18.9 2h3.05l-6.66 7.61L23.12 22h-6.14l-4.81-6.29L6.66 22H3.6l7.12-8.14L3.2 2h6.3l4.35 5.75L18.9 2Zm-1.07 17.82h1.69L8.58 4.07H6.76l11.07 15.75Z" /></svg></a>
+            <a href="https://www.youtube.com/results?search_query=Mesa+plumbing+and+sewer+Boulder" aria-label="YouTube"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.55 3.58 12 3.58 12 3.58s-7.55 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.12c1.85.5 9.4.5 9.4.5s7.55 0 9.4-.5a3 3 0 0 0 2.1-2.12A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.55v-7.1L15.86 12 9.6 15.55Z" /></svg></a>
           </div>
         </div>
 
@@ -134,20 +285,18 @@
           <h2>Quick Links</h2>
           <a href="/">Home</a>
           <a href="/#about">About Us</a>
-          <a href="/#reviews">Reviews</a>
           <a href="/#faq">FAQs</a>
           <a href="locations.html">Locations</a>
-          <a href="/#contact">Contact</a>
         </nav>
 
         <nav class="footer-column footer-services" aria-label="Footer services">
           <h2>Services</h2>
-          <a href="services.html#plumbing-repair"><i data-lucide="wrench"></i> Plumbing</a>
-          <a href="services.html#drain-cleaning"><i data-lucide="waves"></i> Drain Cleaning</a>
-          <a href="services.html#sewer-line-repair"><i data-lucide="construction"></i> Sewer Line Repair</a>
-          <a href="services.html#water-heater-service"><i data-lucide="droplets"></i> Water Heaters</a>
-          <a href="services.html#ac-repair"><i data-lucide="snowflake"></i> AC Repair</a>
-          <a href="services.html#furnace-repair"><i data-lucide="flame"></i> Furnace Repair</a>
+          <a href="services.html"><i data-lucide="wrench"></i> Plumbing</a>
+          <a href="services.html?service=drain-cleaning"><i data-lucide="waves"></i> Drain Cleaning</a>
+          <a href="services.html?service=sewer-line-repair"><i data-lucide="construction"></i> Sewer Line Repair</a>
+          <a href="services.html?service=water-heaters"><i data-lucide="droplets"></i> Water Heaters</a>
+          <a href="services.html?service=ac-repair"><i data-lucide="snowflake"></i> AC Repair</a>
+          <a href="services.html?service=furnace-repair"><i data-lucide="flame"></i> Furnace Repair</a>
         </nav>
 
         <div class="footer-column footer-contact">

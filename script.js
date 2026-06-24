@@ -30,6 +30,7 @@ document.querySelectorAll('.main-nav a').forEach((link) => {
 
 document.querySelectorAll('.nav-trigger').forEach((trigger) => {
   trigger.addEventListener('click', (event) => {
+    if (trigger.tagName === 'A') return;
     event.preventDefault();
     const dropdown = trigger.closest('.nav-dropdown');
     if (!dropdown) return;

@@ -32,14 +32,26 @@
           <button class="nav-trigger" type="button">Services</button>
           <div class="nav-menu" aria-label="Services menu">
             <a href="services.html">Plumbing Service</a>
-            <a href="services.html#drain-cleaning">Drain Cleaning</a>
-            <a href="services.html#sewer-line-repair">Sewer Line Repair</a>
-            <a href="services.html#water-heater-service">Water Heaters</a>
-            <a href="services.html#ac-repair">AC Repair</a>
-            <a href="services.html#furnace-repair">Furnace Repair</a>
+            <a href="services.html?service=drain-cleaning">Drain Cleaning</a>
+            <a href="services.html?service=sewer-line-repair">Sewer Line Repair</a>
+            <a href="services.html?service=water-heaters">Water Heaters</a>
+            <a href="services.html?service=ac-repair">AC Repair</a>
+            <a href="services.html?service=furnace-repair">Furnace Repair</a>
           </div>
         </div>
-        <a href="locations.html">Locations</a>
+        <div class="nav-dropdown">
+          <a class="nav-trigger" href="locations.html">Locations</a>
+          <div class="nav-menu" aria-label="Locations menu">
+            <a href="boulder.html">Boulder</a>
+            <a href="locations.html">Longmont</a>
+            <a href="locations.html">Broomfield</a>
+            <a href="locations.html">Thornton</a>
+            <a href="locations.html">Commerce City</a>
+            <a href="locations.html">Lakewood</a>
+            <a href="locations.html">Arvada</a>
+            <a href="locations.html">Lafayette</a>
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">
@@ -63,7 +75,188 @@
     <div id="homepage-footer-clone"></div>
 
     <script>
-      fetch('index.html')
+      const serviceCards = [
+        {
+          id: 'plumbing-repair',
+          photo: 'service-photo-plumbing',
+          icon: 'wrench',
+          title: 'Plumbing Service',
+          copy: 'Leaks, fixtures, pipe repairs, clogs, and whole-home plumbing help.',
+          bullets: ['Leak detection and repair', 'Kitchen and bathroom plumbing', 'Fixture installs and replacements'],
+          href: 'services.html',
+          action: 'View Plumbing Services',
+          service: 'Plumbing Repair',
+        },
+        {
+          id: 'drain-cleaning',
+          photo: 'service-photo-sewer',
+          icon: 'waves',
+          title: 'Drain Cleaning',
+          copy: 'Clog removal, slow drains, backups, and camera-supported drain diagnostics.',
+          bullets: ['Drain cleaning and clog removal', 'Slow drain diagnostics', 'Kitchen, bath, and main line drains'],
+          href: 'services.html?service=drain-cleaning',
+          action: 'View Drain Services',
+          service: 'Sewer & Drain',
+        },
+        {
+          id: 'sewer-line-repair',
+          photo: 'service-photo-pipe',
+          icon: 'construction',
+          title: 'Sewer Line Repair',
+          copy: 'Sewer backups, damaged lines, inspections, repairs, and replacement support.',
+          bullets: ['Sewer camera inspection', 'Sewer backup help', 'Line repair and replacement support'],
+          href: 'services.html?service=sewer-line-repair',
+          action: 'View Sewer Line Repair',
+          service: 'Sewer & Drain',
+        },
+        {
+          id: 'water-heater-service',
+          photo: 'service-photo-water',
+          icon: 'droplets',
+          title: 'Water Heaters',
+          copy: 'Water heater repairs, replacements, and hot water troubleshooting.',
+          bullets: ['Tank and tankless installs', 'No-hot-water diagnostics', 'Flush and maintenance service'],
+          href: 'services.html?service=water-heaters',
+          action: 'View Water Heater Services',
+          service: 'Water Heater',
+        },
+        {
+          id: 'ac-repair',
+          photo: 'service-photo-hvac',
+          icon: 'snowflake',
+          title: 'AC Repair',
+          copy: 'Cooling diagnostics, repair visits, tune-ups, and comfort troubleshooting.',
+          bullets: ['AC diagnostics', 'Cooling repairs', 'Seasonal tune-ups'],
+          href: 'services.html?service=ac-repair',
+          action: 'View AC Repair',
+          service: 'HVAC',
+        },
+        {
+          id: 'furnace-repair',
+          photo: 'service-photo-emergency',
+          icon: 'flame',
+          title: 'Furnace Repair',
+          copy: 'Heating diagnostics, furnace repairs, seasonal service, and safety checks.',
+          bullets: ['Heating diagnostics', 'Furnace repair', 'Safety and comfort checks'],
+          href: 'services.html?service=furnace-repair',
+          action: 'View Furnace Repair',
+          service: 'HVAC',
+        },
+      ];
+
+      const relatedServiceCards = (currentId) => serviceCards.filter((card) => card.id !== currentId);
+
+      const servicePages = {
+        services: {
+          title: 'Plumbing & Sewer Services Boulder | Mesa Plumbing & Sewer',
+          description: 'Explore Mesa Plumbing & Sewer services in Boulder, including plumbing repairs, sewer and drain cleaning, boilers, HVAC, AC repair, and water heaters.',
+          breadcrumb: 'Home / Services',
+          eyebrow: 'Your local plumbing & sewer experts',
+          heading: 'Plumbing &amp; Sewer <span>Services Done Right.</span>',
+          copy: 'From urgent leaks and sewer backups to boiler repair, HVAC service, AC repair, and water heater installs, Mesa keeps your home comfortable with honest pricing and dependable workmanship.',
+          highlights: [
+            { icon: 'flame', title: 'Professional Boiler Repair', copy: 'Heating system help from experienced local technicians.' },
+            { icon: 'thermometer-sun', title: 'Expert HVAC Help', copy: 'Reliable heating and cooling service for year-round comfort.' },
+            { icon: 'waves', title: 'Fix Your Drain & Sewer', copy: 'Drain cleaning, sewer repair, and backup solutions done right.' },
+          ],
+          kicker: 'Our Services',
+          sectionTitle: 'Explore More Mesa Services',
+          sectionCopy: 'One trusted team for drain cleaning, sewer line repair, water heaters, AC repair, and furnace repair across Boulder County.',
+          cards: relatedServiceCards('plumbing-repair'),
+        },
+        'drain-cleaning': {
+          title: 'Drain Cleaning Boulder | Mesa Plumbing & Sewer',
+          description: 'Drain cleaning in Boulder for clogged drains, slow drains, backups, and main line drain issues from Mesa Plumbing & Sewer.',
+          breadcrumb: 'Home / Services / Drain Cleaning',
+          eyebrow: 'Clogged drain and backup help',
+          heading: 'Drain Cleaning <span>Done Right.</span>',
+          copy: 'Mesa clears clogged drains, slow sinks, backed-up tubs, and main line drain problems with honest diagnostics and dependable local service.',
+          kicker: 'Drain Cleaning',
+          sectionTitle: 'Explore More Mesa Services',
+          sectionCopy: 'One trusted local team for plumbing service, sewer line repair, water heaters, AC repair, and furnace repair across Boulder County.',
+          cards: relatedServiceCards('drain-cleaning'),
+        },
+        'sewer-line-repair': {
+          title: 'Sewer Line Repair Boulder | Mesa Plumbing & Sewer',
+          description: 'Sewer line repair in Boulder for sewer backups, damaged sewer lines, camera inspections, and replacement support.',
+          breadcrumb: 'Home / Services / Sewer Line Repair',
+          eyebrow: 'Sewer backup and line repair help',
+          heading: 'Sewer Line Repair <span>Done Right.</span>',
+          copy: 'From sewer backups to damaged underground lines, Mesa helps Boulder homeowners understand the issue and choose the right repair path.',
+          kicker: 'Sewer Line Repair',
+          sectionTitle: 'Explore More Mesa Services',
+          sectionCopy: 'One trusted local team for plumbing service, drain cleaning, water heaters, AC repair, and furnace repair across Boulder County.',
+          cards: relatedServiceCards('sewer-line-repair'),
+        },
+        'water-heaters': {
+          title: 'Water Heater Service Boulder | Mesa Plumbing & Sewer',
+          description: 'Water heater repair and replacement in Boulder for tank, tankless, no-hot-water, and maintenance needs.',
+          breadcrumb: 'Home / Services / Water Heaters',
+          eyebrow: 'Hot water repair and replacement',
+          heading: 'Water Heater Service <span>Done Right.</span>',
+          copy: 'Mesa helps with no-hot-water calls, leaking tanks, replacement planning, and routine water heater service for Boulder homes.',
+          kicker: 'Water Heaters',
+          sectionTitle: 'Explore More Mesa Services',
+          sectionCopy: 'One trusted local team for plumbing service, drain cleaning, sewer line repair, AC repair, and furnace repair across Boulder County.',
+          cards: relatedServiceCards('water-heater-service'),
+        },
+        'ac-repair': {
+          title: 'AC Repair Boulder | Mesa Plumbing Heating & Cooling',
+          description: 'AC repair in Boulder for cooling diagnostics, air conditioner repairs, seasonal tune-ups, and comfort troubleshooting.',
+          breadcrumb: 'Home / Services / AC Repair',
+          eyebrow: 'Cooling repair and comfort help',
+          heading: 'AC Repair <span>Done Right.</span>',
+          copy: 'When your home is not cooling the way it should, Mesa provides practical AC diagnostics, repair support, and tune-ups for Boulder homeowners.',
+          kicker: 'AC Repair',
+          sectionTitle: 'Explore More Mesa Services',
+          sectionCopy: 'One trusted local team for plumbing service, drain cleaning, sewer line repair, water heaters, and furnace repair across Boulder County.',
+          cards: relatedServiceCards('ac-repair'),
+        },
+        'furnace-repair': {
+          title: 'Furnace Repair Boulder | Mesa Plumbing Heating & Cooling',
+          description: 'Furnace repair in Boulder for heating diagnostics, furnace service, safety checks, and seasonal heating tune-ups.',
+          breadcrumb: 'Home / Services / Furnace Repair',
+          eyebrow: 'Heating repair and safety checks',
+          heading: 'Furnace Repair <span>Done Right.</span>',
+          copy: 'Mesa helps Boulder homeowners with furnace diagnostics, heating repairs, seasonal service, and safety-focused comfort checks.',
+          kicker: 'Furnace Repair',
+          sectionTitle: 'Explore More Mesa Services',
+          sectionCopy: 'One trusted local team for plumbing service, drain cleaning, sewer line repair, water heaters, and AC repair across Boulder County.',
+          cards: relatedServiceCards('furnace-repair'),
+        },
+      };
+
+      const getServicePage = () => {
+        const serviceParam = new URLSearchParams(window.location.search).get('service');
+        if (serviceParam && servicePages[serviceParam]) return servicePages[serviceParam];
+        const slug = (window.location.pathname.split('/').filter(Boolean).pop() || 'services').replace(/\.html$/, '');
+        return servicePages[slug] || servicePages.services;
+      };
+
+      const escapeAttr = (value) => String(value).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+      const renderHighlight = (highlight) => `
+        <div class="service-hero-highlight">
+          <i data-lucide="${escapeAttr(highlight.icon)}"></i>
+          <span><strong>${highlight.title}</strong><small>${highlight.copy}</small></span>
+        </div>
+      `;
+      const renderCard = (card) => `
+        <article class="service-page-card" id="${escapeAttr(card.id)}">
+          <div class="service-page-photo ${escapeAttr(card.photo)}"></div>
+          <div class="service-page-body">
+            <div class="service-page-title"><i data-lucide="${escapeAttr(card.icon)}"></i><h3>${card.title}</h3></div>
+            <p>${card.copy}</p>
+            <ul>${card.bullets.map((bullet) => `<li>${bullet}</li>`).join('')}</ul>
+            <a href="${escapeAttr(card.href)}" data-service="${escapeAttr(card.service)}">${card.action} <i data-lucide="arrow-right"></i></a>
+          </div>
+        </article>
+      `;
+
+      const currentPage = getServicePage();
+      document.title = currentPage.title;
+      document.querySelector('meta[name="description"]')?.setAttribute('content', currentPage.description);
+
+      fetch('/index.html')
         .then((response) => response.text())
         .then((html) => {
           const source = new DOMParser().parseFromString(html, 'text/html');
@@ -73,6 +266,7 @@
             const clonedMain = main.cloneNode(true);
             const hero = clonedMain.querySelector('.hero');
             const heroForm = hero?.querySelector('.request-card');
+            const heroServiceButtons = hero?.querySelector('.hero-service-highlights');
             const heroContent = hero?.querySelector('.hero-content');
             const servicesSection = clonedMain.querySelector('#services');
             const contactSection = clonedMain.querySelector('#contact');
@@ -91,20 +285,22 @@
 
             hero?.classList.add('service-hero-reference');
             heroForm?.remove();
+            heroServiceButtons?.remove();
             reviewDivider?.remove();
             reviewsSection?.remove();
             contactSection?.remove();
             contactDivider?.remove();
             if (heroContent) {
               heroContent.innerHTML = `
-                <p class="breadcrumb">Home / Services</p>
-                <p class="eyebrow">Your local plumbing &amp; sewer experts</p>
-                <h1>Plumbing &amp; Sewer <span>Services Done Right.</span></h1>
-                <p class="hero-copy">From urgent leaks and clogged drains to sewer backups and water heater issues, Mesa helps Boulder homeowners with honest pricing and dependable workmanship.</p>
+                <p class="breadcrumb">${currentPage.breadcrumb}</p>
+                <p class="eyebrow">${currentPage.eyebrow}</p>
+                <h1>${currentPage.heading}</h1>
+                <p class="hero-copy">${currentPage.copy}</p>
                 <div class="hero-buttons">
                   <a class="button button-red" href="tel:+17206802303"><i data-lucide="phone"></i> Call (720) 680-2303</a>
                   <a class="button button-dark" href="locations.html">View Service Area <i data-lucide="arrow-right"></i></a>
                 </div>
+                ${currentPage.highlights ? `<div class="service-hero-highlights" aria-label="Featured services">${currentPage.highlights.map(renderHighlight).join('')}</div>` : ''}
               `;
             }
             if (servicesSection) {
@@ -112,65 +308,12 @@
               servicesSection.innerHTML = `
                 <div class="services-page-shell">
                   <div class="section-heading">
-                    <p class="section-kicker">Our Services</p>
-                    <h2>Our Core Services</h2>
-                    <p>One trusted team for plumbing, drain cleaning, sewer line repair, water heaters, AC repair, and furnace repair across Boulder County.</p>
+                    <p class="section-kicker">${currentPage.kicker}</p>
+                    <h2>${currentPage.sectionTitle}</h2>
+                    <p>${currentPage.sectionCopy}</p>
                   </div>
-                  <div class="service-page-grid">
-                    <article class="service-page-card" id="plumbing-repair">
-                      <div class="service-page-photo service-photo-plumbing"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="wrench"></i><h3>Plumbing</h3></div>
-                        <p>Leaks, fixtures, pipe repairs, clogs, and whole-home plumbing help.</p>
-                        <ul><li>Leak detection and repair</li><li>Kitchen and bathroom plumbing</li><li>Fixture installs and replacements</li></ul>
-                        <a href="#request" data-service="Plumbing Repair">View Plumbing Services <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="drain-cleaning">
-                      <div class="service-page-photo service-photo-sewer"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="waves"></i><h3>Drain Cleaning</h3></div>
-                        <p>Clog removal, slow drains, backups, and camera-supported drain diagnostics.</p>
-                        <ul><li>Drain cleaning and clog removal</li><li>Slow drain diagnostics</li><li>Kitchen, bath, and main line drains</li></ul>
-                        <a href="#request" data-service="Sewer & Drain">View Drain Services <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="sewer-line-repair">
-                      <div class="service-page-photo service-photo-pipe"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="construction"></i><h3>Sewer Line Repair</h3></div>
-                        <p>Sewer backups, damaged lines, inspections, repairs, and replacement support.</p>
-                        <ul><li>Sewer camera inspection</li><li>Sewer backup help</li><li>Line repair and replacement support</li></ul>
-                        <a href="#request" data-service="Sewer & Drain">View Sewer Line Repair <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="water-heater-service">
-                      <div class="service-page-photo service-photo-water"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="droplets"></i><h3>Water Heaters</h3></div>
-                        <p>Water heater repairs, replacements, and hot water troubleshooting.</p>
-                        <ul><li>Tank and tankless installs</li><li>No-hot-water diagnostics</li><li>Flush and maintenance service</li></ul>
-                        <a href="#request" data-service="Water Heater">View Water Heater Services <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="ac-repair">
-                      <div class="service-page-photo service-photo-hvac"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="snowflake"></i><h3>AC Repair</h3></div>
-                        <p>Cooling diagnostics, repair visits, tune-ups, and comfort troubleshooting.</p>
-                        <ul><li>AC diagnostics</li><li>Cooling repairs</li><li>Seasonal tune-ups</li></ul>
-                        <a href="#request" data-service="HVAC">View AC Repair <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
-                    <article class="service-page-card" id="furnace-repair">
-                      <div class="service-page-photo service-photo-emergency"></div>
-                      <div class="service-page-body">
-                        <div class="service-page-title"><i data-lucide="flame"></i><h3>Furnace Repair</h3></div>
-                        <p>Heating diagnostics, furnace repairs, seasonal service, and safety checks.</p>
-                        <ul><li>Heating diagnostics</li><li>Furnace repair</li><li>Safety and comfort checks</li></ul>
-                        <a href="#request" data-service="HVAC">View Furnace Repair <i data-lucide="arrow-right"></i></a>
-                      </div>
-                    </article>
+                  <div class="service-page-grid${currentPage.cards.length === 5 ? ' is-five-card-grid' : ''}">
+                    ${currentPage.cards.map(renderCard).join('')}
                   </div>
                 </div>
               `;

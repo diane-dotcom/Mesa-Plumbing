@@ -32,14 +32,26 @@
           <button class="nav-trigger" type="button">Services</button>
           <div class="nav-menu" aria-label="Services menu">
             <a href="services.html">Plumbing Service</a>
-            <a href="services.html#drain-cleaning">Drain Cleaning</a>
-            <a href="services.html#sewer-line-repair">Sewer Line Repair</a>
-            <a href="services.html#water-heater-service">Water Heaters</a>
-            <a href="services.html#ac-repair">AC Repair</a>
-            <a href="services.html#furnace-repair">Furnace Repair</a>
+            <a href="services.html?service=drain-cleaning">Drain Cleaning</a>
+            <a href="services.html?service=sewer-line-repair">Sewer Line Repair</a>
+            <a href="services.html?service=water-heaters">Water Heaters</a>
+            <a href="services.html?service=ac-repair">AC Repair</a>
+            <a href="services.html?service=furnace-repair">Furnace Repair</a>
           </div>
         </div>
-        <a href="locations.html">Locations</a>
+        <div class="nav-dropdown">
+          <a class="nav-trigger" href="locations.html">Locations</a>
+          <div class="nav-menu" aria-label="Locations menu">
+            <a href="boulder.html">Boulder</a>
+            <a href="locations.html">Longmont</a>
+            <a href="locations.html">Broomfield</a>
+            <a href="locations.html">Thornton</a>
+            <a href="locations.html">Commerce City</a>
+            <a href="locations.html">Lakewood</a>
+            <a href="locations.html">Arvada</a>
+            <a href="locations.html">Lafayette</a>
+          </div>
+        </div>
       </nav>
 
       <div class="header-actions">
@@ -64,7 +76,7 @@
 
       <section class="hero" id="home">
         <div class="hero-art" aria-hidden="true">
-          <img class="hero-bg-photo" src="assets/mesa-main-hero.png" alt="" />
+          <img class="hero-bg-photo" src="assets/mesa-truck-3050.png" alt="" />
           <div class="hero-photo-scrim"></div>
           <div class="mountain mountain-one"></div>
           <div class="mountain mountain-two"></div>
@@ -124,6 +136,21 @@
             <small>Licensed &amp; insured &middot; No-obligation quote</small>
             <p class="form-message" role="status" aria-live="polite"></p>
           </form>
+
+          <div class="hero-service-highlights" aria-label="Featured services">
+            <a class="service-hero-highlight" href="services.html">
+              <i data-lucide="flame"></i>
+              <span><strong>Professional Boiler Repair</strong><small>Heating system help from experienced local technicians.</small></span>
+            </a>
+            <a class="service-hero-highlight" href="services.html?service=ac-repair">
+              <i data-lucide="thermometer-sun"></i>
+              <span><strong>Expert HVAC Help</strong><small>Reliable heating and cooling service for year-round comfort.</small></span>
+            </a>
+            <a class="service-hero-highlight" href="services.html?service=drain-cleaning">
+              <i data-lucide="waves"></i>
+              <span><strong>Fix Your Drain &amp; Sewer</strong><small>Drain cleaning, sewer repair, and backup solutions done right.</small></span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -405,16 +432,16 @@
           <p>Trusted plumbing and sewer solutions built on honest service, quality workmanship, and dependable care for Boulder County homeowners.</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/search/top?q=mesa%20plumbing%20sewer%20boulder" aria-label="Facebook">
-              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M14.2 8.4V6.9c0-.7.5-.9.9-.9h2.3V2.2L14.2 2c-3.6 0-4.5 2.2-4.5 4.4v2H6.8v4.2h2.9V22h4.5v-9.4h3.1l.5-4.2h-3.6Z" /></svg>
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.04 3.66 9.22 8.44 9.94v-7.03H7.92v-2.91h2.52V9.84c0-2.49 1.48-3.86 3.75-3.86 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.77l-.44 2.91h-2.33V22C18.34 21.28 22 17.1 22 12.06Z" /></svg>
             </a>
             <a href="https://www.instagram.com/explore/search/keyword/?q=mesa%20plumbing" aria-label="Instagram">
-              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" ry="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" /></svg>
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" /></svg>
             </a>
             <a href="https://x.com/search?q=Mesa%20plumbing%20and%20sewer%20company%20Boulder" aria-label="X">
-              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M14.7 10.4 22.1 2h-1.8l-6.4 7.3L8.8 2H2.9l7.8 11.2L2.9 22h1.8l6.8-7.7 5.4 7.7h5.9l-8.1-11.6Zm-2.4 2.7-.8-1.1L5.2 3.4H8l5 7 .8 1.1 6.6 9.1h-2.8l-5.3-7.5Z" /></svg>
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M18.9 2h3.05l-6.66 7.61L23.12 22h-6.14l-4.81-6.29L6.66 22H3.6l7.12-8.14L3.2 2h6.3l4.35 5.75L18.9 2Zm-1.07 17.82h1.69L8.58 4.07H6.76l11.07 15.75Z" /></svg>
             </a>
             <a href="https://www.youtube.com/results?search_query=Mesa+plumbing+and+sewer+Boulder" aria-label="YouTube">
-              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.6 7.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-1C15.8 3.7 12 3.7 12 3.7s-3.8 0-6.7.2c-.4.1-1.3.1-2.1 1-.6.7-.8 2.3-.8 2.3S2.2 9 2.2 10.8v1.7c0 1.8.2 3.6.2 3.6s.2 1.6.8 2.3c.8.9 1.9.9 2.4 1 1.7.2 6.4.2 6.4.2s3.8 0 6.7-.2c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.3.8-2.3s.2-1.8.2-3.6v-1.7c0-1.8-.2-3.6-.2-3.6ZM10.2 15.1V8.8l5.9 3.2-5.9 3.1Z" /></svg>
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.55 3.58 12 3.58 12 3.58s-7.55 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.12c1.85.5 9.4.5 9.4.5s7.55 0 9.4-.5a3 3 0 0 0 2.1-2.12A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.55v-7.1L15.86 12 9.6 15.55Z" /></svg>
             </a>
           </div>
         </div>
@@ -423,20 +450,18 @@
           <h2>Quick Links</h2>
           <a href="/">Home</a>
           <a href="#about">About Us</a>
-          <a href="#reviews">Reviews</a>
           <a href="#faq">FAQs</a>
           <a href="locations.html">Locations</a>
-          <a href="#contact">Contact</a>
         </nav>
 
         <nav class="footer-column footer-services" aria-label="Footer services">
           <h2>Services</h2>
-          <a href="services.html#plumbing-repair"><i data-lucide="wrench"></i> Plumbing</a>
-          <a href="services.html#drain-cleaning"><i data-lucide="waves"></i> Drain Cleaning</a>
-          <a href="services.html#sewer-line-repair"><i data-lucide="construction"></i> Sewer Line Repair</a>
-          <a href="services.html#water-heater-service"><i data-lucide="droplets"></i> Water Heaters</a>
-          <a href="services.html#ac-repair"><i data-lucide="snowflake"></i> AC Repair</a>
-          <a href="services.html#furnace-repair"><i data-lucide="flame"></i> Furnace Repair</a>
+          <a href="services.html"><i data-lucide="wrench"></i> Plumbing</a>
+          <a href="services.html?service=drain-cleaning"><i data-lucide="waves"></i> Drain Cleaning</a>
+          <a href="services.html?service=sewer-line-repair"><i data-lucide="construction"></i> Sewer Line Repair</a>
+          <a href="services.html?service=water-heaters"><i data-lucide="droplets"></i> Water Heaters</a>
+          <a href="services.html?service=ac-repair"><i data-lucide="snowflake"></i> AC Repair</a>
+          <a href="services.html?service=furnace-repair"><i data-lucide="flame"></i> Furnace Repair</a>
         </nav>
 
         <div class="footer-column footer-contact">
